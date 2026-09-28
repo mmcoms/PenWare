@@ -1,5 +1,7 @@
 # PenWare
 
+<p align="center"><img src="penware-logo.png" alt="PenWare" width="180"></p>
+
 **Firmware watch for security research & hardware tools.**
 
 PenWare monitors official firmware releases for popular ESP32, Flipper Zero, RF, and multi-tool devices. It keeps a baseline of the last-seen version and raises an alert when a new release appears.
