@@ -17,16 +17,16 @@ PenWare monitors official firmware releases for popular ESP32, Flipper Zero, RF,
 
 | Device | Notes |
 |--------|-------|
+| **Banshee** | Wired Hatters dual-SoC (GhostESP) |
 | **Biscuit Pro** | Dual-chip ESP32-C5 + WROOM |
 | **Biscuit Ultra** | Pro radios + SD + external antennas |
-| **Marauder V8** | ESP32 Marauder (ESP32-C5) – stable + nightly |
-| **WiFi Pineapple Pager** | Hak5 official firmware only |
 | **Flipper Zero** | Official, Momentum, Unleashed, RogueMaster |
-| **Banshee** | Wired Hatters dual-SoC (GhostESP) |
-| **HackRF Pro H4M** | Mayhem firmware |
 | **FREE-WILi 2** | RP2350B multitool |
-| **T-Embed** | LilyGO T-Embed / T-Embed CC1101 (Bruce) |
+| **HackRF Pro H4M** | Mayhem firmware |
+| **Marauder V8** | ESP32 Marauder (ESP32-C5) – stable + nightly |
 | **Phantom** | Rabbit Labs Phantom (CYD Marauder build) |
+| **T-Embed** | LilyGO T-Embed / T-Embed CC1101 (Bruce) |
+| **WiFi Pineapple Pager** | Hak5 official firmware only |
 
 Each device entry in `catalog.json` includes:
 - Firmware feeds (stable / beta / nightly where available)
