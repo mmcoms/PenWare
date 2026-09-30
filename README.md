@@ -6,7 +6,7 @@
 
 PenWare monitors official firmware releases for popular ESP32, Flipper Zero, RF, and multi-tool devices. It keeps a baseline of the last-seen version and raises an alert when a new release appears.
 
-- **Live app:** [https://mmcoms.com](https://mmcoms.com)
+- **Live app:** [https://penware.app](https://penware.app)
 - **Catalog (source of truth):** [`catalog.json`](catalog.json)
 
 > Official project links only. Only test systems you are authorized to test.
