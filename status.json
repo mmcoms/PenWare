@@ -1,0 +1,174 @@
+{
+  "feeds": {
+    "banshee-stable": {
+      "device": "Banshee",
+      "label": "Stable",
+      "version": "v2.2",
+      "publishedAt": "2026-10-06T02:54:26Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2/Banshee_C5.zip",
+      "fileName": "Banshee_C5.zip",
+      "note": "### TL;DR **LoRa and Meshtastic:** - GhostESP can now talk to Meshtastic and Meshcore networks over SX1262 LoRa radios. - The official Meshtastic and Meshcore apps work with it over BLE. - LoRa is supported on the Heltec"
+    },
+    "banshee-pre": {
+      "device": "Banshee",
+      "label": "Prerelease",
+      "version": "v2.2-pre6",
+      "publishedAt": "2026-10-02T10:53:39Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2-pre6",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2-pre6/Banshee_C5.zip",
+      "fileName": "Banshee_C5.zip",
+      "note": "Automated pre-release build for tag v2.2-pre6. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2-pre6 Changelog: https://github.com/GhostESP-Revival/GhostESP/blob/v2.2-pre6/CHANGELOG.md You can flas"
+    },
+    "biscuit-pro-prod": {
+      "device": "Biscuit Pro",
+      "label": "Production",
+      "version": "C5 v1.6.2 · WROOM v1.6.2",
+      "publishedAt": null,
+      "url": "https://firmware.biscuitshop.us/Biscuit_V1/Prod/manifest.json",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
+    },
+    "biscuit-ultra-prod": {
+      "device": "Biscuit Ultra",
+      "label": "Production",
+      "version": "C5 v1.6.2 · WROOM v1.6.2",
+      "publishedAt": null,
+      "url": "https://firmware.biscuitshop.us/Biscuit_Ultra/Prod/manifest.json",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
+    },
+    "flipper-ofw": {
+      "device": "Flipper Zero",
+      "label": "Official",
+      "version": "1.4.3",
+      "publishedAt": "2025-12-05T19:43:45Z",
+      "url": "https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.4.3",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "*This is a bugfix release for Flipper Zero [Firmware 1.4.2](https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.4.2)* ## What's Changed * Infrared: Fix infrared CLI plugin MissingImports by @WillyJL in "
+    },
+    "flipper-mntm": {
+      "device": "Flipper Zero",
+      "label": "Momentum",
+      "version": "mntm-012",
+      "publishedAt": "2025-12-31T23:35:59Z",
+      "url": "https://github.com/Next-Flip/Momentum-Firmware/releases/tag/mntm-012",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "## ⬇️ Download >### [🖥️ Web Updater (chrome)](https://momentum-fw.dev/update?version=mntm-012) [recommended] >### [☁️ Flipper Lab/App (chrome/mobile)](https://lab.flipper.net/?url=https://up.momentum-fw.dev/builds/firmw"
+    },
+    "flipper-unl": {
+      "device": "Flipper Zero",
+      "label": "Unleashed",
+      "version": "unlshd-093",
+      "publishedAt": "2026-09-12T20:52:59Z",
+      "url": "https://github.com/DarkFlippers/unleashed-firmware/releases/tag/unlshd-093",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "## Main changes - Current API: 88.9 - SubGHz: **Nice O-Code support** (52, 72 bits, Dynamic) - decode, save and emulate, plus the new **Nice O-Code** app that recovers the installer code from 4+ captures (by @zero-mega &"
+    },
+    "flipper-rm": {
+      "device": "Flipper Zero",
+      "label": "RogueMaster",
+      "version": "RM1001-2124-4f2e0620",
+      "publishedAt": "2026-10-02T01:30:55Z",
+      "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins/releases/tag/RM1001-2124-4f2e0620",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "# Install GitHub Version With [WEB INSTALLER](https://lab.flipper.net/?url=https%3A%2F%2Frogue-master.net%2F%3Ffile%3DRM1001-2124-4f2e0620.tgz&channel=RM1001-2124-4f2e0620&version=0.420.0&target=f7) ## Thank you so much "
+    },
+    "freewili-stable": {
+      "device": "FREE-WILi 2",
+      "label": "Stable",
+      "version": "v09",
+      "publishedAt": "2026-10-02T18:49:16Z",
+      "url": "https://github.com/freewili/FREE-WILi2-Firmware/releases/tag/v09",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "# v09 - Stable firmware release The first Stable FREE-WILi2 firmware since the v07 Day Zero DEFCON release. Fresh builds of all three processors from one source revision, with the v08 Preview work and the latest Main and"
+    },
+    "mayhem-stable": {
+      "device": "HackRF Pro H4M",
+      "label": "Stable",
+      "version": "v2.4.0",
+      "publishedAt": "2026-03-24T09:54:49Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/v2.4.0",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/v2.4.0/COPY_TO_SDCARD_hpro_mayhem_v2.4.0-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_v2.4.0-no-world-map.zip",
+      "note": "# Stable release - v2.4.0 ## 🆕 HackRF Pro (PRALINE) Support Mayhem now officially supports the **HackRF Pro**! This includes iCE40 FPGA bitstream loading, MAX2831 transceiver driver, software RSSI, and dedicated diagnos"
+    },
+    "mayhem-nightly": {
+      "device": "HackRF Pro H4M",
+      "label": "Nightly",
+      "version": "nightly-tag-2026-10-06",
+      "publishedAt": "2026-10-06T00:30:42Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-06",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-06/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261006-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261006-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-06** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261006): - 510d579d - @SecLBL: GeoMap: remove dup"
+    },
+    "marauder-v8-stable": {
+      "device": "Marauder V8",
+      "label": "Stable",
+      "version": "v1.18.0",
+      "publishedAt": "2026-10-06T17:38:28Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.18.0",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.18.0/esp32_marauder_v1_18_0_20261006_v8.bin",
+      "fileName": "esp32_marauder_v1_18_0_20261006_v8.bin",
+      "note": "## What's Changed * Generate release asset tables from target registry by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1557 * Fix SD firmware updater null menu crash by @justcallmekoko in https"
+    },
+    "marauder-v8-nightly": {
+      "device": "Marauder V8",
+      "label": "Nightly",
+      "version": "nightly_b2b9f92",
+      "publishedAt": "2026-10-06T03:18:51Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_b2b9f92",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_b2b9f92/esp32_marauder_v1_18_0_beta_20261006_v8.bin",
+      "fileName": "esp32_marauder_v1_18_0_beta_20261006_v8.bin",
+      "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
+    },
+    "phantom-stable": {
+      "device": "Phantom",
+      "label": "Stable",
+      "version": "v1.18.0",
+      "publishedAt": "2026-10-06T17:38:28Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.18.0",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.18.0/esp32_marauder_v1_18_0_20261006_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_18_0_20261006_cyd_2432S024_guition.bin",
+      "note": "## What's Changed * Generate release asset tables from target registry by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1557 * Fix SD firmware updater null menu crash by @justcallmekoko in https"
+    },
+    "phantom-nightly": {
+      "device": "Phantom",
+      "label": "Nightly",
+      "version": "nightly_b2b9f92",
+      "publishedAt": "2026-10-06T03:18:51Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_b2b9f92",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_b2b9f92/esp32_marauder_v1_18_0_beta_20261006_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_18_0_beta_20261006_cyd_2432S024_guition.bin",
+      "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
+    },
+    "tembed-bruce": {
+      "device": "T-Embed",
+      "label": "Bruce stable",
+      "version": "1.16.1",
+      "publishedAt": "2026-08-11T16:36:36Z",
+      "url": "https://github.com/BruceDevices/firmware/releases/tag/1.16.1",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "# WiFi - Added detection for WPA3-PSK and WPA2/WPA3 #2750 by @0Zane - Wait for connection before accepting commands #2740 by @Pedro-Jesus-Fuentes-Morcillo - Brucegotchi now captures handshakes correctly #2724 by @Mysteri"
+    },
+    "pager-stable": {
+      "device": "WiFi Pineapple Pager",
+      "label": "Stable",
+      "version": "1.1.3-stable",
+      "publishedAt": "2026-10-03T20:22:50.0094Z",
+      "url": "https://downloads.hak5.org/pineapple/pager",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "SHA-256 3073d6b8f91b46eddda20450f9b93f4e3e018e65f5943f4b0941a1fff7f8cd33 · WiFi Pineapple Pager 1.1.3 Add WiFi Client Mode indicator to the default status bar and Network Status Bar Add Quick Settings menu, replacing the first Power Menu item now that the sleep screen can be accessed with a sin"
+    }
+  }
+}
