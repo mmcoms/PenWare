@@ -12,6 +12,7 @@ import {
   RefreshCw,
   Trash2,
 } from "lucide-react";
+import { DeviceBackup } from "@/components/penware/device-backup";
 import { BUILTIN_DEVICES } from "@/lib/penware/catalog";
 import { checkFeeds, pullCatalog } from "@/lib/penware/check";
 import { feedWatched, usePenware } from "@/lib/penware/store";
@@ -392,6 +393,7 @@ export function PenwareApp() {
               ))}
             </ul>
           </section>
+          <DeviceBackup device={selected} />
           <Steps title="Install" steps={selected.install} />
           {selected.recovery && selected.recoveryTitle ? (
             <Steps title={selected.recoveryTitle} steps={selected.recovery} />
