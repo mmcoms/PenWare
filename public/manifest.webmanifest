@@ -1,0 +1,12 @@
+{
+  "name": "PenWare",
+  "short_name": "PenWare",
+  "description": "Firmware watch for pentest hardware.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#10120e",
+  "theme_color": "#10120e",
+  "icons": [
+    { "src": "/penware-logo.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" }
+  ]
+}

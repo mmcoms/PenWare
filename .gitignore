@@ -1,0 +1,7 @@
+node_modules/
+.output/
+.vercel/
+.nitro/
+.tanstack/
+dist/
+.DS_Store

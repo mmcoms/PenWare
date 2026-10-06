@@ -58,6 +58,31 @@ No accounts, no telemetry, no third-party firmware sources.
 
 ---
 
+## Project layout
+
+| Path | What it is |
+|------|------------|
+| `src/components/penware/penware-app.tsx` | The whole app screen (fleet, device detail, add device, Backup) |
+| `src/lib/penware/check.ts` | Server functions: `checkFeeds` (GitHub, Biscuit, Hak5 lookups) and `pullCatalog` |
+| `src/lib/penware/catalog.ts` | Built-in device list, install steps, recovery steps |
+| `src/lib/penware/store.ts` | Saved settings, baselines and watch list (kept in the browser) |
+| `catalog.json` | Public catalog the app can pull from this repo |
+
+Built with TanStack Start, React, Tailwind and Vite. Hosted on Vercel.
+
+## Running it locally
+
+```
+npm install
+npm run dev
+```
+
+## Deploying
+
+Vercel builds every push to `main` automatically (`npm run build` produces `.vercel/output`).
+
+---
+
 ## Contributing / Adding a device
 
 Want to add another device?
