@@ -1,0 +1,56 @@
+name: Firmware watch
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # every 6 hours (UTC)
+  workflow_dispatch: # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: firmware-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check firmware feeds
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/watch.mjs
+
+      - name: Open an issue for new firmware
+        if: hashFiles('alert.md') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="$(head -n 1 alert.md)"
+          tail -n +2 alert.md > alert-body.md
+          gh issue create --title "$title" --body-file alert-body.md
+
+      - name: Phone push (optional, set repo variable NTFY_TOPIC)
+        if: hashFiles('alert.md') != '' && vars.NTFY_TOPIC != ''
+        run: |
+          curl -s -H "Title: PenWare" -H "Tags: rotating_light" \
+            -d "$(head -n 1 alert.md)" "https://ntfy.sh/${{ vars.NTFY_TOPIC }}"
+
+      - name: Save versions
+        run: |
+          if [ -n "$(git status --porcelain status.json)" ]; then
+            git config user.name "penware-watch"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add status.json
+            git commit -m "Firmware watch: update status.json"
+            git push
+          else
+            echo "No version changes."
+          fi
