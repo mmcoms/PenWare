@@ -16,6 +16,8 @@ import type { Device } from "@/lib/penware/types";
 
 const ESPTOOL_URL = "https://cdn.jsdelivr.net/npm/esptool-js@0.7.0/+esm";
 const LOG_KEY = "penware-device-backups";
+const SLOW_KEY = "penware-backup-slow";
+const STALL_MS = 30000;
 const RESTORE_TOOL = "https://espressif.github.io/esptool-js/";
 
 type EspInfo = { chips: string; note?: string };
@@ -85,6 +87,23 @@ function writeLog(entries: LogEntry[]) {
   }
 }
 
+function readFlag(key: string) {
+  try {
+    return window.localStorage.getItem(key) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function writeFlag(key: string, on: boolean) {
+  try {
+    if (on) window.localStorage.setItem(key, "1");
+    else window.localStorage.removeItem(key);
+  } catch {
+    /* ignore */
+  }
+}
+
 function sizeToBytes(size: string | undefined): number | null {
   const match = /^(\d+)\s*(KB|MB)$/i.exec(size ?? "");
   if (!match) return null;
@@ -141,11 +160,14 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
   const [message, setMessage] = useState("");
   const [progress, setProgress] = useState(0);
   const [log, setLog] = useState<LogEntry[]>([]);
+  const [manualBoot, setManualBoot] = useState(false);
+  const [slow, setSlow] = useState(false);
   const busy = useRef(false);
 
   useEffect(() => {
     setSupported(typeof navigator !== "undefined" && "serial" in navigator);
     setLog(readLog().filter((entry) => entry.deviceId === device.id));
+    setSlow(readFlag(SLOW_KEY));
   }, [device.id]);
 
   async function run() {
@@ -162,18 +184,37 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
       const port = await serial.requestPort();
       const { ESPLoader, Transport } = await import(/* @vite-ignore */ ESPTOOL_URL);
       transport = new Transport(port, false);
-      const loader = new ESPLoader({ transport, baudrate: 921600, romBaudrate: 115200 });
+      // 460800 suits most USB-serial chips; "slow" mode stays at 115200 for boards that stall.
+      const loader = new ESPLoader({ transport, baudrate: slow ? 115200 : 460800, romBaudrate: 115200 });
       setMessage("Connecting. If this hangs, hold BOOT, tap RESET, release BOOT, and try again.");
-      const chip: string = await loader.main();
+      const chip: string = await loader.main(manualBoot ? "no_reset" : "default_reset");
       const sizeLabel: string | undefined = await loader.detectFlashSize();
       const total = sizeToBytes(sizeLabel);
       if (!total) throw new Error(`Could not read the flash size (${sizeLabel ?? "unknown"}).`);
 
       setPhase("reading");
-      setMessage(`${chip}, ${sizeLabel} flash. Reading. Keep the cable connected.`);
-      const data: Uint8Array = await loader.readFlash(0, total, (_packet: unknown, done: number, all: number) => {
-        setProgress(all ? done / all : 0);
+      setMessage(
+        `${chip}, ${sizeLabel} flash. Reading${slow ? " at safe speed (can take 10+ minutes)" : ""}. Keep the cable connected.`,
+      );
+      let lastTick = Date.now();
+      let watchdog: ReturnType<typeof setInterval> | undefined;
+      const stalled = new Promise<never>((_, reject) => {
+        watchdog = setInterval(() => {
+          if (Date.now() - lastTick > STALL_MS) reject(new Error("STALLED"));
+        }, 2000);
       });
+      let data: Uint8Array;
+      try {
+        data = await Promise.race([
+          loader.readFlash(0, total, (_packet: unknown, done: number, all: number) => {
+            lastTick = Date.now();
+            setProgress(all ? done / all : 0);
+          }) as Promise<Uint8Array>,
+          stalled,
+        ]);
+      } finally {
+        clearInterval(watchdog);
+      }
 
       const sha256 = await sha256Hex(data);
       const stamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-");
@@ -197,11 +238,19 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
     } catch (error) {
       const text = error instanceof Error ? error.message : String(error);
       setPhase("error");
-      setMessage(
-        /No port selected|requestPort/i.test(text)
-          ? "No port was picked. Plug the device in with a data cable and try again."
-          : `Backup failed: ${text}. Put the chip in download mode (hold BOOT, tap RESET, release BOOT) and try again.`,
-      );
+      if (text === "STALLED") {
+        writeFlag(SLOW_KEY, true);
+        setSlow(true);
+        setMessage(
+          "Reading stopped moving. Unplug the device, put it back in download mode, and try again. PenWare will use a slower, safer speed next time.",
+        );
+      } else if (/No port selected|requestPort/i.test(text)) {
+        setMessage("No port was picked. Plug the device in with a data cable and try again.");
+      } else {
+        setMessage(
+          `Backup failed: ${text}. Put the chip in download mode (unplug, hold BOOT, plug in, release BOOT), tick "Board is already in download mode", and try again.`,
+        );
+      }
     } finally {
       try {
         await transport?.disconnect();
@@ -223,6 +272,38 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
           you can write this file back and be where you started.
         </p>
         {info.note ? <p className="mt-2 text-sm text-muted">{info.note}</p> : null}
+
+        <div className="mt-3 flex flex-col gap-2 text-sm">
+          <label className="flex items-start gap-2">
+            <input
+              type="checkbox"
+              checked={manualBoot}
+              onChange={(event) => setManualBoot(event.target.checked)}
+              disabled={running}
+              className="mt-1"
+            />
+            <span>
+              Board is already in download mode
+              <span className="block text-xs text-muted">Unplug, hold BOOT, plug in, release BOOT. The screen stays dark.</span>
+            </span>
+          </label>
+          <label className="flex items-start gap-2">
+            <input
+              type="checkbox"
+              checked={slow}
+              onChange={(event) => {
+                setSlow(event.target.checked);
+                writeFlag(SLOW_KEY, event.target.checked);
+              }}
+              disabled={running}
+              className="mt-1"
+            />
+            <span>
+              Safe speed
+              <span className="block text-xs text-muted">Slower but more reliable. Use it if a backup stalls.</span>
+            </span>
+          </label>
+        </div>
 
         {supported === false ? (
           <p className="mt-3 text-sm text-alert">
