@@ -5,6 +5,7 @@ import type { Device } from "@/lib/penware/types";
 /**
  * "Back up before you update" panel on each device page.
  *
+ * Which panel a device gets is set by its "backup" entry in catalog.json.
  * ESP32-based devices: reads the whole flash chip over USB (Web Serial +
  * Espressif's esptool-js), saves it as a .bin and records its SHA-256, so the
  * exact firmware that was on the device can be written back later.
@@ -18,47 +19,13 @@ const ESPTOOL_URL = "https://cdn.jsdelivr.net/npm/esptool-js@0.7.0/+esm";
 const LOG_KEY = "penware-device-backups";
 const SLOW_KEY = "penware-backup-slow";
 const STALL_MS = 30000;
+const CHUNK = 256 * 1024;
+// Web Serial's default receive buffer is only 255 bytes, which overflows during long
+// reads and stalls them. A large buffer keeps up with the board.
+const SERIAL_OPTIONS = { bufferSize: 1024 * 1024 };
 const RESTORE_TOOL = "https://espressif.github.io/esptool-js/";
 
 type EspInfo = { chips: string; note?: string };
-
-const ESP_DEVICES: Record<string, EspInfo> = {
-  banshee: {
-    chips: "ESP32-S3 + ESP32-C5",
-    note: "Banshee has two chips that show up as separate USB ports. Run the backup once for each chip. The file name records which chip it came from.",
-  },
-  "biscuit-pro": {
-    chips: "ESP32-C5 + ESP32 WROOM",
-    note: "Dual-chip board. If two serial ports appear, back up each one.",
-  },
-  "biscuit-ultra": {
-    chips: "ESP32-C5 + ESP32 WROOM",
-    note: "Dual-chip board. If two serial ports appear, back up each one.",
-  },
-  "marauder-v8": { chips: "ESP32-C5" },
-  phantom: { chips: "ESP32 (CYD 2432S024)", note: "Use the USB-C port that shows a serial port, not a charge-only one." },
-  "t-embed": { chips: "ESP32-S3" },
-};
-
-const CHECKLISTS: Record<string, string[]> = {
-  "flipper-zero": [
-    "In qFlipper, open Advanced and use Backup. It saves the Flipper's internal storage (settings, saved remotes, NFC/RFID/Sub-GHz captures) to your computer.",
-    "Copy the whole microSD card to your computer as well. Custom firmware updates keep the card, but a Repair does not protect files you care about.",
-    "Note which firmware you run (Official, Momentum, Unleashed or RogueMaster) so you can put it back after a Repair.",
-  ],
-  "hackrf-h4m-pro": [
-    "Copy the whole SD card to your computer. Mayhem keeps settings, captures and apps there.",
-    "Keep the hpro package of the version you run now. PenWare's channel list links the release, so you can reflash the same version if a new one misbehaves.",
-  ],
-  "freewili-2": [
-    "Copy the SD card (apps and scripts folders) to your computer.",
-    "Keep the FREE-WILi2 zip and its .sha256 for the version you run now, so you can return to it.",
-  ],
-  "pineapple-pager": [
-    "Copy your loot and any custom payloads off the Pager (SCP over the USB network) before updating.",
-    "Firmware itself always comes from the Hak5 portal. Check the SHA-256 PenWare shows against the portal before installing.",
-  ],
-};
 
 type LogEntry = {
   deviceId: string;
@@ -129,11 +96,11 @@ function saveFile(name: string, data: Uint8Array) {
   setTimeout(() => URL.revokeObjectURL(url), 5000);
 }
 
+/** Backup options come from each device's "backup" entry in catalog.json. */
 export function DeviceBackup({ device }: { device: Device }) {
-  const esp = ESP_DEVICES[device.id];
-  const checklist = CHECKLISTS[device.id];
-  if (esp) return <EspBackup device={device} info={esp} />;
-  if (checklist) return <Checklist items={checklist} />;
+  const backup = device.backup;
+  if (backup?.kind === "esp32") return <EspBackup device={device} info={backup} />;
+  if (backup?.kind === "checklist" && backup.items.length) return <Checklist items={backup.items} />;
   return null;
 }
 
@@ -185,7 +152,12 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
       const { ESPLoader, Transport } = await import(/* @vite-ignore */ ESPTOOL_URL);
       transport = new Transport(port, false);
       // 460800 suits most USB-serial chips; "slow" mode stays at 115200 for boards that stall.
-      const loader = new ESPLoader({ transport, baudrate: slow ? 115200 : 460800, romBaudrate: 115200 });
+      const loader = new ESPLoader({
+        transport,
+        baudrate: slow ? 115200 : 460800,
+        romBaudrate: 115200,
+        serialOptions: SERIAL_OPTIONS,
+      });
       setMessage("Connecting. If this hangs, hold BOOT, tap RESET, release BOOT, and try again.");
       const chip: string = await loader.main(manualBoot ? "no_reset" : "default_reset");
       const sizeLabel: string | undefined = await loader.detectFlashSize();
@@ -203,15 +175,22 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
           if (Date.now() - lastTick > STALL_MS) reject(new Error("STALLED"));
         }, 2000);
       });
-      let data: Uint8Array;
+      // Read in 256 KB pieces: short transfers are far less likely to stall than one long one.
+      const data = new Uint8Array(total);
       try {
-        data = await Promise.race([
-          loader.readFlash(0, total, (_packet: unknown, done: number, all: number) => {
-            lastTick = Date.now();
-            setProgress(all ? done / all : 0);
-          }) as Promise<Uint8Array>,
-          stalled,
-        ]);
+        for (let offset = 0; offset < total; offset += CHUNK) {
+          const size = Math.min(CHUNK, total - offset);
+          const piece = (await Promise.race([
+            loader.readFlash(offset, size, (_packet: unknown, done: number) => {
+              lastTick = Date.now();
+              setProgress((offset + done) / total);
+            }) as Promise<Uint8Array>,
+            stalled,
+          ])) as Uint8Array;
+          data.set(piece.subarray(0, size), offset);
+          lastTick = Date.now();
+          setProgress((offset + size) / total);
+        }
       } finally {
         clearInterval(watchdog);
       }
@@ -242,7 +221,7 @@ function EspBackup({ device, info }: { device: Device; info: EspInfo }) {
         writeFlag(SLOW_KEY, true);
         setSlow(true);
         setMessage(
-          "Reading stopped moving. Unplug the device, put it back in download mode, and try again. PenWare will use a slower, safer speed next time.",
+          "Reading stopped moving. Switch the device off and unplug it, then plug it in, switch it on and try again. PenWare will use a slower, safer speed next time.",
         );
       } else if (/No port selected|requestPort/i.test(text)) {
         setMessage("No port was picked. Plug the device in with a data cable and try again.");

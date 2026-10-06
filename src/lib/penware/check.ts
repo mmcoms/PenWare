@@ -48,6 +48,12 @@ const deviceSchema = z.object({
   install: z.array(stepSchema).min(1).max(10),
   recoveryTitle: z.string().max(80).nullable(),
   recovery: z.array(stepSchema).max(8).nullable(),
+  backup: z
+    .discriminatedUnion("kind", [
+      z.object({ kind: z.literal("esp32"), chips: z.string().min(1).max(80), note: z.string().max(400).optional() }),
+      z.object({ kind: z.literal("checklist"), items: z.array(z.string().min(1).max(400)).min(1).max(8) }),
+    ])
+    .optional(),
 });
 
 type GithubRelease = {

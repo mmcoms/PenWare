@@ -64,9 +64,10 @@ No accounts, no telemetry, no third-party firmware sources.
 |------|------------|
 | `src/components/penware/penware-app.tsx` | The whole app screen (fleet, device detail, add device, Backup) |
 | `src/lib/penware/check.ts` | Server functions: `checkFeeds` (GitHub, Biscuit, Hak5 lookups) and `pullCatalog` |
-| `src/lib/penware/catalog.ts` | Built-in device list, install steps, recovery steps |
+| `src/components/penware/device-backup.tsx` | "Back up before you update" panel (USB flash backup for ESP32 devices) |
 | `src/lib/penware/store.ts` | Saved settings, baselines and watch list (kept in the browser) |
-| `catalog.json` | Public catalog the app can pull from this repo |
+| `catalog.json` | **The device list.** Read by the app, the firmware watch and the backup panel |
+| `scripts/watch.mjs`, `.github/workflows/watch.yml` | Background firmware watch (every 6 hours, opens an issue on new releases) |
 
 Built with TanStack Start, React, Tailwind and Vite. Hosted on Vercel.
 
@@ -83,16 +84,39 @@ Vercel builds every push to `main` automatically (`npm run build` produces `.ver
 
 ---
 
-## Contributing / Adding a device
+## Adding a device
 
-Want to add another device?
+`catalog.json` is the **only** place devices are defined. The app, the background firmware watch and the backup panel all read it, so a device added here appears everywhere after the next deploy (about 2 minutes).
 
-1. Fork the repo (or open an issue).
-2. Add a new object to the `devices` array in `catalog.json` following the existing structure.
-3. Include at least one official feed, clear install notes, and recovery steps where possible.
-4. Open a pull request.
+**Quickest path**
 
-Please stick to **official** release sources only.
+1. Open an issue with the **New device** form (Issues → New issue → New device) and fill in what you know.
+2. Turn it into a `catalog.json` entry: copy the closest existing device, change the fields below, and commit (GitHub: open `catalog.json` → pencil icon → edit → Commit changes).
+
+**Fields**
+
+| Field | What to put |
+|---|---|
+| `id` | short, lowercase, unique: `t-embed`, `marauder-v8` |
+| `name`, `blurb` | display name and one-line description |
+| `github` | official firmware repo URL |
+| `links` | official docs / flasher links (max 8) |
+| `companion` | official live UI or emulator, or `null` |
+| `feeds` | one per channel to watch (see below) |
+| `install`, `recovery` | steps as `{ "title": "...", "detail": "..." }`; `recoveryTitle` heads the recovery list |
+| `backup` | `{ "kind": "esp32", "chips": "ESP32-S3" }` for USB backup, or `{ "kind": "checklist", "items": ["..."] }` |
+
+**Feeds** (each needs a unique `id` and a `label`; `watchDefault: true` means watched by default and checked by the email watch):
+
+```json
+{ "id": "mydevice-stable", "label": "Stable", "watchDefault": true,
+  "spec": { "kind": "github-release", "owner": "owner", "repo": "repo",
+            "channel": "stable", "assetIncludes": "_myboard.bin" } }
+```
+
+`channel` is `stable` or `prerelease`. `assetIncludes` is optional and picks the file for your exact board. Firmware that isn't published as GitHub releases needs a new feed kind in `src/lib/penware/check.ts` and `scripts/watch.mjs`.
+
+Official sources only, please.
 
 ---
 

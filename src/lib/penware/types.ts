@@ -42,6 +42,21 @@ export type Companion = {
   detail: string;
 };
 
+/** How PenWare helps you back up before updating. */
+export type DeviceBackup =
+  | {
+      /** Full flash backup over USB (Web Serial + esptool-js). */
+      kind: "esp32";
+      /** Shown to the user, e.g. "ESP32-S3 + ESP32-C5". */
+      chips: string;
+      note?: string;
+    }
+  | {
+      /** A short list of things to save by hand (SD card, app backup, loot). */
+      kind: "checklist";
+      items: string[];
+    };
+
 export type Device = {
   id: string;
   name: string;
@@ -53,6 +68,7 @@ export type Device = {
   install: GuideStep[];
   recoveryTitle: string | null;
   recovery: GuideStep[] | null;
+  backup?: DeviceBackup;
 };
 
 export type FeedHit =
