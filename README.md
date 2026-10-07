@@ -13,6 +13,20 @@ PenWare monitors official firmware releases for popular ESP32, Flipper Zero, RF,
 
 ---
 
+## Responsible use
+
+PenWare tracks firmware for security research and hardware testing tools. Many of these devices can transmit, jam, spoof, capture or interfere with wireless signals and other people's equipment. Using them is your responsibility.
+
+- **Only test systems, networks and devices you own or have explicit written permission to test.**
+- **Follow the laws where you are.** Radio transmission, signal jamming, intercepting communications, cloning access cards and accessing networks without permission are illegal in many places, even "just to try it."
+- **Respect other people's privacy.** Don't collect, keep or share data that isn't yours.
+- **Use official firmware from official sources.** PenWare links only to each project's own releases and flashers. Check checksums where they're provided.
+- **Back up before you flash.** Firmware updates can fail. You're responsible for your own hardware.
+
+PenWare is an independent project. It isn't affiliated with or endorsed by any of the device makers or firmware projects it lists. Firmware remains the property of its authors. PenWare is provided as-is, with no warranty, and its authors aren't responsible for how the tools it tracks are used.
+
+---
+
 ## Supported devices
 
 | Device | Notes |
