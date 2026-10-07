@@ -40,6 +40,16 @@
       "fileName": null,
       "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
     },
+    "biscuit-crumb-prod": {
+      "device": "Biscuit Crumb",
+      "label": "Production",
+      "version": "C5 v1.6.2",
+      "publishedAt": null,
+      "url": "https://firmware.biscuitshop.us/Biscuit_Crumb/Prod/manifest.json",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
+    },
     "flipper-ofw": {
       "device": "Flipper Zero",
       "label": "Official",
@@ -103,12 +113,22 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-06",
-      "publishedAt": "2026-10-06T00:30:42Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-06",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-06/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261006-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261006-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-06** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261006): - 510d579d - @SecLBL: GeoMap: remove dup"
+      "version": "nightly-tag-2026-10-07",
+      "publishedAt": "2026-10-07T00:32:05Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-07",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-07/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261007-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261007-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-07** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261007): - 91fb3dba - @zxkmm: Spectrum Analyzer a"
+    },
+    "halehound-stable": {
+      "device": "HaleHound",
+      "label": "Stable",
+      "version": "v3.9.5",
+      "publishedAt": "2026-08-30T01:47:21Z",
+      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v3.9.5",
+      "fileUrl": null,
+      "fileName": null,
+      "note": "_ _ .k$$$$$g, ,g$$$$$k. .k$$$$$$$$$$$a. .a$$$$$$$$$$$k. .J$$$$$?' `?$?^?, ,?^?$?` `?$$$$$L. JS$$SI!a, _.JS$ ?, ,? $SL._ ,a$!IS$$SL k$$$SI!:?$$$$$$$$$xu$$j j$$ux$$$$$$$$$?:!IS$$$k :I$$SI:J$$?*\"$$$$4^?*?: :?*?^4$$$$\"*?$$L:"
     },
     "marauder-v8-stable": {
       "device": "Marauder V8",
@@ -129,6 +149,16 @@
       "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_b2b9f92/esp32_marauder_v1_18_0_beta_20261006_v8.bin",
       "fileName": "esp32_marauder_v1_18_0_beta_20261006_v8.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
+    },
+    "nm-cyd-c5-squachwatch": {
+      "device": "NM-CYD-C5 (SquachWatch)",
+      "label": "SquachWatch stable",
+      "version": "v1.32.0",
+      "publishedAt": "2026-10-06T00:43:24Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.32.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.32.0/nm-cyd-c5-firmware.bin",
+      "fileName": "nm-cyd-c5-firmware.bin",
+      "note": "**Put On Your Brave Face.** There's a new pet on the counter, and he's a toaster. Not a smart one. A chrome two-slot off somebody's kitchen counter, with a red lever, a cloth cord for a tail, and the firm belief that he "
     },
     "phantom-stable": {
       "device": "Phantom",
