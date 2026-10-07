@@ -20,9 +20,11 @@ PenWare monitors official firmware releases for popular ESP32, Flipper Zero, RF,
 | **Banshee** | Wired Hatters dual-SoC (GhostESP) |
 | **Biscuit Pro** | Dual-chip ESP32-C5 + WROOM |
 | **Biscuit Ultra** | Pro radios + SD + external antennas |
+| **Biscuit Crumb** | Single ESP32-C5, smallest Biscuit |
 | **Flipper Zero** | Official, Momentum, Unleashed, RogueMaster |
 | **FREE-WILi 2** | RP2350B multitool |
 | **HackRF Pro H4M** | Mayhem firmware |
+| **HaleHound** | CYD 2.8"/3.5" and ESP32-DIV (HaleHound firmware) |
 | **Marauder V8** | ESP32 Marauder (ESP32-C5) – stable + nightly |
 | **Phantom** | Rabbit Labs Phantom (CYD Marauder build) |
 | **T-Embed** | LilyGO T-Embed / T-Embed CC1101 (Bruce) |

@@ -89,6 +89,10 @@
           "href": "https://codehedge.github.io/Biscuit-Wiki/features/firmware-updates.html"
         },
         {
+          "label": "Biscuit web flasher",
+          "href": "https://flasher.biscuitshop.us/"
+        },
+        {
           "label": "Pro page",
           "href": "https://codehedge.github.io/Biscuit-Wiki/devices/"
         },
@@ -166,6 +170,10 @@
           "href": "https://codehedge.github.io/Biscuit-Wiki/devices/ultra.html"
         },
         {
+          "label": "Biscuit web flasher",
+          "href": "https://flasher.biscuitshop.us/"
+        },
+        {
           "label": "Firmware wiki",
           "href": "https://codehedge.github.io/Biscuit-Wiki/features/firmware-updates.html"
         }
@@ -222,6 +230,82 @@
         "kind": "esp32",
         "chips": "ESP32-C5 + ESP32 WROOM",
         "note": "Dual-chip board. If two serial ports appear, back up each one."
+      }
+    },
+    {
+      "id": "biscuit-crumb",
+      "name": "Biscuit Crumb",
+      "blurb": "Smallest Biscuit: single ESP32-C5 wardriving and security-testing board. Manifest: Biscuit_Crumb.",
+      "github": "https://github.com/CodeHedge/biscuit_flasher",
+      "links": [
+        {
+          "label": "Crumb product page",
+          "href": "https://biscuitshop.us/products/biscuit-crumb"
+        },
+        {
+          "label": "Biscuit web flasher",
+          "href": "https://flasher.biscuitshop.us/"
+        },
+        {
+          "label": "Device overview",
+          "href": "https://codehedge.github.io/Biscuit-Wiki/devices/"
+        },
+        {
+          "label": "Firmware wiki",
+          "href": "https://codehedge.github.io/Biscuit-Wiki/features/firmware-updates.html"
+        }
+      ],
+      "companion": null,
+      "feeds": [
+        {
+          "id": "biscuit-crumb-prod",
+          "label": "Production",
+          "watchDefault": true,
+          "spec": {
+            "kind": "biscuit",
+            "product": "Biscuit_Crumb",
+            "channel": "Prod"
+          }
+        },
+        {
+          "id": "biscuit-crumb-beta",
+          "label": "Beta",
+          "watchDefault": false,
+          "spec": {
+            "kind": "biscuit",
+            "product": "Biscuit_Crumb",
+            "channel": "Beta"
+          }
+        }
+      ],
+      "install": [
+        {
+          "title": "Use the phone app for a normal update",
+          "detail": "Open Biscuit Manager, connect over BLE, and open the firmware notice on the Dashboard. Pick Production unless you mean to test Beta."
+        },
+        {
+          "title": "Give it Wi-Fi, then wait",
+          "detail": "Enter the SSID and password the Crumb itself should use. It has a single ESP32-C5, so there is only one update step. Keep it powered and nearby until the app reconnects and shows the new version."
+        },
+        {
+          "title": "USB reflash if OTA will not start",
+          "detail": "Open the official Biscuit web flasher at flasher.biscuitshop.us in Chrome or Edge, choose Crumb, connect with a data USB-C cable, and flash. Run PenWare's backup first and close that tab so the flasher can use the USB port."
+        }
+      ],
+      "recoveryTitle": "Recovery if an update fails",
+      "recovery": [
+        {
+          "title": "Reflash with the official web flasher",
+          "detail": "Use flasher.biscuitshop.us and pick Crumb, not Pro, Ultra, DIY or Node. Each product has its own image."
+        },
+        {
+          "title": "Download mode if no port appears",
+          "detail": "Try another data cable and USB port first. If the board still does not show a serial port, put the ESP32-C5 in download mode (hold BOOT while connecting USB) and start the flasher again. Ask in the official Biscuit Discord if the Crumb's buttons differ."
+        }
+      ],
+      "backup": {
+        "kind": "esp32",
+        "chips": "ESP32-C5"
       }
     },
     {
@@ -525,6 +609,74 @@
           "Copy the whole SD card to your computer. Mayhem keeps settings, captures and apps there.",
           "Keep the hpro package of the version you run now. PenWare's channel list links the release, so you can reflash the same version if a new one misbehaves."
         ]
+      }
+    },
+    {
+      "id": "halehound",
+      "name": "HaleHound",
+      "blurb": "HaleHound multi-protocol toolkit for Cheap Yellow Display (2.8\"/3.5\") and ESP32-DIV boards. Pick your exact board in the flasher.",
+      "github": "https://github.com/JesseCHale/HaleHound-CYD",
+      "links": [
+        {
+          "label": "HaleHound web flasher",
+          "href": "https://flash.halehound.com"
+        },
+        {
+          "label": "Releases",
+          "href": "https://github.com/JesseCHale/HaleHound-CYD/releases"
+        },
+        {
+          "label": "HaleHound site",
+          "href": "https://halehound.com/"
+        },
+        {
+          "label": "CH340 drivers",
+          "href": "https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all"
+        }
+      ],
+      "companion": null,
+      "feeds": [
+        {
+          "id": "halehound-stable",
+          "label": "Stable",
+          "watchDefault": true,
+          "spec": {
+            "kind": "github-release",
+            "owner": "JesseCHale",
+            "repo": "HaleHound-CYD",
+            "channel": "stable"
+          }
+        }
+      ],
+      "install": [
+        {
+          "title": "Use the official web flasher",
+          "detail": "Open flash.halehound.com in Chrome or Edge. Unplug other USB devices, connect the board with a data cable, pick your exact board from the menu, click Connect & Flash and choose the port. Unplug and replug when it finishes."
+        },
+        {
+          "title": "Pick the exact board",
+          "detail": "HaleHound builds differ for CYD 2.8\", CYD 3.5\" and ESP32-DIV boards. The wrong build can boot to a blank or garbled screen. The GitHub release notes describe what changed; the flasher serves the matching firmware."
+        },
+        {
+          "title": "Back up first",
+          "detail": "Run PenWare's backup before flashing, then close that tab so the flasher can use the USB port. Most CYD boards use a CH340 USB-serial chip; install the driver if no port appears."
+        }
+      ],
+      "recoveryTitle": "Download mode if the board will not flash",
+      "recovery": [
+        {
+          "title": "BOOT and RESET",
+          "detail": "Hold BOOT, tap RESET (or plug in USB while holding BOOT), then release BOOT. The screen stays dark in download mode. Then start the flasher again."
+        },
+        {
+          "title": "Wrong screen or colors after flashing",
+          "detail": "Reflash and pick the other board variant. First boot may ask for touchscreen calibration; inverted colors usually mean the wrong display build."
+        }
+      ],
+      "backup": {
+        "kind": "esp32",
+        "chips": "ESP32 (CYD / ESP32-DIV)",
+        "note": "CYD boards usually use a CH340 USB-serial chip. If more than one port appears, pick the one that appears when you plug the board in."
       }
     },
     {

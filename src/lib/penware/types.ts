@@ -8,7 +8,8 @@ export type GithubSpec = {
 
 export type BiscuitSpec = {
   kind: "biscuit";
-  product: "Biscuit_V1" | "Biscuit_Ultra";
+  /** Folder name on firmware.biscuitshop.us, e.g. "Biscuit_V1" (Pro), "Biscuit_Ultra", "Biscuit_Crumb". */
+  product: string;
   channel: "Prod" | "Beta";
 };
 
@@ -122,7 +123,7 @@ export function isDevice(value: unknown): value is Device {
       return typeof spec.owner === "string" && typeof spec.repo === "string";
     }
     if (spec.kind === "biscuit") {
-      return spec.product === "Biscuit_V1" || spec.product === "Biscuit_Ultra";
+      return typeof spec.product === "string" && /^Biscuit_[A-Za-z0-9]+$/.test(spec.product);
     }
     return spec.kind === "hak5" && spec.model === "wifipineapplepager";
   });

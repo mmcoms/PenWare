@@ -14,7 +14,7 @@ const feedSchema = z.object({
     }),
     z.object({
       kind: z.literal("biscuit"),
-      product: z.enum(["Biscuit_V1", "Biscuit_Ultra"]),
+      product: z.string().regex(/^Biscuit_[A-Za-z0-9]+$/), // e.g. Biscuit_V1, Biscuit_Ultra, Biscuit_Crumb
       channel: z.enum(["Prod", "Beta"]),
     }),
     z.object({
