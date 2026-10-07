@@ -13,12 +13,12 @@
     "banshee-pre": {
       "device": "Banshee",
       "label": "Prerelease",
-      "version": "v2.2-pre6",
-      "publishedAt": "2026-10-02T10:53:39Z",
-      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2-pre6",
-      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2-pre6/Banshee_C5.zip",
+      "version": "v2.2.1-pre1",
+      "publishedAt": "2026-10-07T06:38:10Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1-pre1",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.1-pre1/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
-      "note": "Automated pre-release build for tag v2.2-pre6. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2-pre6 Changelog: https://github.com/GhostESP-Revival/GhostESP/blob/v2.2-pre6/CHANGELOG.md You can flas"
+      "note": "Automated pre-release build for tag v2.2.1-pre1. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1-pre1 Changelog: https://github.com/GhostESP-Revival/GhostESP/blob/v2.2.1-pre1/CHANGELOG.md You ca"
     },
     "biscuit-pro-prod": {
       "device": "Biscuit Pro",
