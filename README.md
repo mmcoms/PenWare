@@ -26,6 +26,7 @@ PenWare monitors official firmware releases for popular ESP32, Flipper Zero, RF,
 | **HackRF Pro H4M** | Mayhem firmware |
 | **HaleHound** | CYD 2.8"/3.5" and ESP32-DIV (HaleHound firmware) |
 | **Marauder V8** | ESP32 Marauder (ESP32-C5) – stable + nightly |
+| **NM-CYD-C5** | RockBase 2.8" CYD on ESP32-C5, running SquachWatch-CYD |
 | **Phantom** | Rabbit Labs Phantom (CYD Marauder build) |
 | **T-Embed** | LilyGO T-Embed / T-Embed CC1101 (Bruce) |
 | **WiFi Pineapple Pager** | Hak5 official firmware only |

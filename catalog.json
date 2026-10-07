@@ -764,6 +764,79 @@
       }
     },
     {
+      "id": "nm-cyd-c5",
+      "name": "NM-CYD-C5 (SquachWatch)",
+      "blurb": "RockBase NM-CYD-C5: classic 2.8\" CYD screen on an ESP32-C5 (dual-band Wi-Fi 6, 16 MB flash). Running SquachWatch-CYD. File: nm-cyd-c5-firmware.bin.",
+      "github": "https://github.com/skizzophrenic/SquachWatch-CYD",
+      "links": [
+        {
+          "label": "SquachWatch web flasher",
+          "href": "https://squachwatch.com/"
+        },
+        {
+          "label": "Releases",
+          "href": "https://github.com/skizzophrenic/SquachWatch-CYD/releases"
+        },
+        {
+          "label": "NM-CYD-C5 notes",
+          "href": "https://github.com/skizzophrenic/SquachWatch-CYD/blob/main/docs/NM-CYD-C5.md"
+        },
+        {
+          "label": "RockBase board support",
+          "href": "https://github.com/RockBase-iot/NM-CYD-C5"
+        }
+      ],
+      "companion": {
+        "title": "SquachWatch emulator (official)",
+        "href": "https://squachwatch.com/emulator/",
+        "detail": "The real SquachWatch firmware compiled for the browser. Try menus and new releases without touching the board."
+      },
+      "feeds": [
+        {
+          "id": "nm-cyd-c5-squachwatch",
+          "label": "SquachWatch stable",
+          "watchDefault": true,
+          "spec": {
+            "kind": "github-release",
+            "owner": "skizzophrenic",
+            "repo": "SquachWatch-CYD",
+            "channel": "stable",
+            "assetIncludes": "nm-cyd-c5-firmware.bin"
+          }
+        }
+      ],
+      "install": [
+        {
+          "title": "Update on the board",
+          "detail": "With a saved Wi-Fi network, SquachWatch checks for updates at boot. Settings, SYSTEM, UPDATE FIRMWARE installs the signed release from squachwatch.com. UPDATE SQUAD can push the same version to your other boards."
+        },
+        {
+          "title": "Or use the web flasher",
+          "detail": "Open squachwatch.com in Chrome, Edge, Firefox or Brave on a computer. Pick RockBase NM-CYD-C5 (beta), plug in, click Connect & Install. Run PenWare's backup first and close that tab so the flasher can use the USB port."
+        },
+        {
+          "title": "Use the CH340 USB-C port",
+          "detail": "The board has two USB-C ports: the ESP32-C5's native USB and a CH340 serial chip. Either can flash it, but the CH340 port is the one SquachWatch's serial console uses. Install the CH340 driver if no port appears."
+        }
+      ],
+      "recoveryTitle": "Recovery if an update fails",
+      "recovery": [
+        {
+          "title": "Reflash from the web flasher",
+          "detail": "squachwatch.com, pick RockBase NM-CYD-C5. It writes the ESP32-C5 bootloader, partitions and app, so a board that no longer boots comes back."
+        },
+        {
+          "title": "Download mode if no port appears",
+          "detail": "Hold BOOT while plugging in USB (or hold BOOT and tap RESET), then release BOOT and connect again. Try the other USB-C port and a data cable. The NM-CYD-C5 notes have the esptool route and every pin."
+        }
+      ],
+      "backup": {
+        "kind": "esp32",
+        "chips": "ESP32-C5",
+        "note": "Two USB-C ports. Use the CH340 port; pick the port that appears when you plug the board in."
+      }
+    },
+    {
       "id": "phantom",
       "name": "Phantom",
       "blurb": "Rabbit Labs Phantom. Marauder build for CYD 2432S024 Guition. File ends in _cyd_2432S024_guition.bin.",
