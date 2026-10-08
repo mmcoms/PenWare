@@ -113,12 +113,12 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-07",
-      "publishedAt": "2026-10-07T00:32:05Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-07",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-07/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261007-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261007-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-07** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261007): - 91fb3dba - @zxkmm: Spectrum Analyzer a"
+      "version": "nightly-tag-2026-10-08",
+      "publishedAt": "2026-10-08T00:30:38Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-08",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-08/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261008-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261008-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-08** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261008): - 6ea6de65 - @htotoo: Multiple type of e"
     },
     "halehound-stable": {
       "device": "HaleHound",
@@ -153,12 +153,12 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.32.0",
-      "publishedAt": "2026-10-06T00:43:24Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.32.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.32.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.33.0",
+      "publishedAt": "2026-10-08T01:24:35Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.33.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.33.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
-      "note": "**Put On Your Brave Face.** There's a new pet on the counter, and he's a toaster. Not a smart one. A chrome two-slot off somebody's kitchen counter, with a red lever, a cloth cord for a tail, and the firm belief that he "
+      "note": "**Doin Time.** We know what you've been doing. You've been throwing the pets. T0@$TY across the room, C1iPPY off the wall, over and over, and they've been counting. So now there's a line. Throw a pet ten times inside one"
     },
     "phantom-stable": {
       "device": "Phantom",
