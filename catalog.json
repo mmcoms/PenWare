@@ -1058,6 +1058,70 @@
           "Firmware itself always comes from the Hak5 portal. Check the SHA-256 PenWare shows against the portal before installing."
         ]
       }
+    },
+    {
+      "id": "penware-c5-node-plus",
+      "name": "PenWare C5 Node+",
+      "blurb": "RockBase NM-CYD-C5 (ESP32-C5, dual-band 2.4/5 GHz) running PenWare C5 NODE+ — a Piglet-based wardriver with a live ST7789 color status screen and an ESP-NOW mesh node mode that feeds a Biscuit Pro / Ultra coordinator. Firmware mcoms-1.0.",
+      "github": "https://github.com/mmcoms/PenWare-C5-NODE-Plus",
+      "links": [
+        {
+          "label": "Releases",
+          "href": "https://github.com/mmcoms/PenWare-C5-NODE-Plus/releases"
+        },
+        {
+          "label": "Based on Piglet by CodeHedge",
+          "href": "https://github.com/CodeHedge/Piglet"
+        },
+        {
+          "label": "RockBase board support",
+          "href": "https://github.com/skizzophrenic/SquachWatch-CYD"
+        }
+      ],
+      "feeds": [
+        {
+          "id": "penware-c5-node-plus-stable",
+          "label": "PenWare C5 Node+ stable",
+          "watchDefault": true,
+          "spec": {
+            "kind": "github-release",
+            "owner": "mmcoms",
+            "repo": "PenWare-C5-NODE-Plus",
+            "channel": "stable",
+            "assetIncludes": "penware-c5-node-plus.bin"
+          }
+        }
+      ],
+      "install": [
+        {
+          "title": "Build from source (PlatformIO)",
+          "detail": "Clone the repo and run `pio run -e nm-cyd-c5 -t upload` with the board on the native USB-C port. No web flasher yet."
+        },
+        {
+          "title": "Select the right environment",
+          "detail": "Use the nm-cyd-c5 PlatformIO environment — it carries the ESP32-C5 board support, the 16 MB OTA partition table, and the TFT_eSPI C5 processor port."
+        },
+        {
+          "title": "First boot",
+          "detail": "The board shows a PenWare C5 NODE+ splash, mounts the microSD, and begins dual-band Wi-Fi logging. Node mesh mode is off by default and can be enabled in Config."
+        }
+      ],
+      "recoveryTitle": "Recovery",
+      "recovery": [
+        {
+          "title": "Download mode",
+          "detail": "Hold BOOT, tap RST, then release BOOT to force the ESP32-C5 into download mode, and re-upload over USB."
+        },
+        {
+          "title": "Use the native USB port",
+          "detail": "Flash and monitor on the board's native USB-C port (usbmodem…), not the UART bridge. Keep USB connected through the whole upload."
+        }
+      ],
+      "backup": {
+        "kind": "esp32",
+        "chips": "ESP32-C5",
+        "note": "16 MB flash with a two-slot OTA table. Back up the microSD log files separately before reflashing; NVS (settings, mesh pairings) survives a normal reflash."
+      }
     }
   ]
 }
