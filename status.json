@@ -93,12 +93,12 @@
     "freewili-stable": {
       "device": "FREE-WILi 2",
       "label": "Stable",
-      "version": "v09",
-      "publishedAt": "2026-10-02T18:49:16Z",
-      "url": "https://github.com/freewili/FREE-WILi2-Firmware/releases/tag/v09",
+      "version": "v10",
+      "publishedAt": "2026-10-09T03:40:05Z",
+      "url": "https://github.com/freewili/FREE-WILi2-Firmware/releases/tag/v10",
       "fileUrl": null,
       "fileName": null,
-      "note": "# v09 - Stable firmware release The first Stable FREE-WILi2 firmware since the v07 Day Zero DEFCON release. Fresh builds of all three processors from one source revision, with the v08 Preview work and the latest Main and"
+      "note": "# v10 - Stable firmware release Fresh builds of all three processors from one source revision. v10 fixes Main running its program from flash far below full speed, and Main reformatting its internal flash on every boot wi"
     },
     "mayhem-stable": {
       "device": "HackRF Pro H4M",
@@ -143,11 +143,11 @@
     "marauder-v8-nightly": {
       "device": "Marauder V8",
       "label": "Nightly",
-      "version": "nightly_b2b9f92",
-      "publishedAt": "2026-10-06T03:18:51Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_b2b9f92",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_b2b9f92/esp32_marauder_v1_18_0_beta_20261006_v8.bin",
-      "fileName": "esp32_marauder_v1_18_0_beta_20261006_v8.bin",
+      "version": "nightly_d3ceb28",
+      "publishedAt": "2026-10-09T03:22:10Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_d3ceb28",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_d3ceb28/esp32_marauder_v1_18_0_beta_20261009_v8.bin",
+      "fileName": "esp32_marauder_v1_18_0_beta_20261009_v8.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
     },
     "nm-cyd-c5-squachwatch": {
@@ -173,11 +173,11 @@
     "phantom-nightly": {
       "device": "Phantom",
       "label": "Nightly",
-      "version": "nightly_b2b9f92",
-      "publishedAt": "2026-10-06T03:18:51Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_b2b9f92",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_b2b9f92/esp32_marauder_v1_18_0_beta_20261006_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_18_0_beta_20261006_cyd_2432S024_guition.bin",
+      "version": "nightly_d3ceb28",
+      "publishedAt": "2026-10-09T03:22:10Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_d3ceb28",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_d3ceb28/esp32_marauder_v1_18_0_beta_20261009_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_18_0_beta_20261009_cyd_2432S024_guition.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
     },
     "tembed-bruce": {
