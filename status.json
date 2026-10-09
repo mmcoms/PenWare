@@ -8,7 +8,7 @@
       "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1",
       "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.1/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
-      "note": "Automated release build for tag v2.2.1. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1 Changelog: https://github.com/GhostESP-Revival/GhostESP/blob/v2.2.1/CHANGELOG.md You can flash the bins wi"
+      "note": "### Added - Added 34 new timezones to the Date & Time picker covering the Americas, Europe, Africa, the Middle East, Asia and Oceania, and added UK British Summer Time (BST) support - Support for changing the Meshtastic "
     },
     "banshee-pre": {
       "device": "Banshee",
