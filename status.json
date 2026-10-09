@@ -3,12 +3,12 @@
     "banshee-stable": {
       "device": "Banshee",
       "label": "Stable",
-      "version": "v2.2",
-      "publishedAt": "2026-10-06T02:54:26Z",
-      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2",
-      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2/Banshee_C5.zip",
+      "version": "v2.2.1",
+      "publishedAt": "2026-10-09T06:49:58Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.1/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
-      "note": "### TL;DR **LoRa and Meshtastic:** - GhostESP can now talk to Meshtastic and Meshcore networks over SX1262 LoRa radios. - The official Meshtastic and Meshcore apps work with it over BLE. - LoRa is supported on the Heltec"
+      "note": "Automated release build for tag v2.2.1. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1 Changelog: https://github.com/GhostESP-Revival/GhostESP/blob/v2.2.1/CHANGELOG.md You can flash the bins wi"
     },
     "banshee-pre": {
       "device": "Banshee",
