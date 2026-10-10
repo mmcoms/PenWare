@@ -1061,17 +1061,17 @@
     },
     {
       "id": "penware-c5-node-plus",
-      "name": "PenWare C5 Node+",
-      "blurb": "RockBase NM-CYD-C5 (ESP32-C5, dual-band 2.4/5 GHz) running PenWare C5 NODE+ — a Piglet-based wardriver with a live ST7789 color status screen and an ESP-NOW mesh node mode that feeds a Biscuit Pro / Ultra coordinator. Firmware mcoms-1.0.",
-      "github": "https://github.com/mmcoms/PenWare-C5-NODE-Plus",
+      "name": "PenWare C5 NODE+",
+      "blurb": "RockBase NM-CYD-C5 (ESP32-C5, dual-band 2.4/5 GHz) running PenWare C5 NODE+ — a Piglet-based wardriver with a live ST7789 color status screen and an ESP-NOW mesh node mode that feeds a Biscuit Pro / Ultra coordinator. Watches upstream Piglet releases.",
+      "github": "https://github.com/Hamspiced/piglet",
       "links": [
         {
-          "label": "Releases",
-          "href": "https://github.com/mmcoms/PenWare-C5-NODE-Plus/releases"
+          "label": "Piglet releases",
+          "href": "https://github.com/Hamspiced/piglet/releases"
         },
         {
-          "label": "Based on Piglet by CodeHedge",
-          "href": "https://github.com/CodeHedge/Piglet"
+          "label": "Piglet project (Hamspiced)",
+          "href": "https://github.com/Hamspiced/piglet"
         },
         {
           "label": "RockBase board support",
@@ -1080,15 +1080,14 @@
       ],
       "feeds": [
         {
-          "id": "penware-c5-node-plus-stable",
-          "label": "PenWare C5 Node+ stable",
+          "id": "penware-c5-node-plus-piglet-stable",
+          "label": "Piglet upstream (stable)",
           "watchDefault": true,
           "spec": {
             "kind": "github-release",
-            "owner": "mmcoms",
-            "repo": "PenWare-C5-NODE-Plus",
-            "channel": "stable",
-            "assetIncludes": "penware-c5-node-plus.bin"
+            "owner": "Hamspiced",
+            "repo": "piglet",
+            "channel": "stable"
           }
         }
       ],
