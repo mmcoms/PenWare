@@ -153,12 +153,12 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.33.0",
-      "publishedAt": "2026-10-08T01:24:35Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.33.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.33.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.34.0",
+      "publishedAt": "2026-10-11T14:19:08Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.34.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.34.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
-      "note": "**Doin Time.** We know what you've been doing. You've been throwing the pets. T0@$TY across the room, C1iPPY off the wall, over and over, and they've been counting. So now there's a line. Throw a pet ten times inside one"
+      "note": "**Lava Lamp.** Squachy has never once known how much battery he had left. He'd just keep talking until the screen went black mid-sentence, like a guy who refuses to check his gas gauge. That ends today. On the boards tha"
     },
     "phantom-stable": {
       "device": "Phantom",
