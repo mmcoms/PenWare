@@ -113,12 +113,12 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-10",
-      "publishedAt": "2026-10-10T00:32:23Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-10",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-10/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261010-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261010-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-10** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261010): - 1dc8e0d1 - @htotoo: FT8 RX: fix ft8_li"
+      "version": "nightly-tag-2026-10-11",
+      "publishedAt": "2026-10-11T00:33:31Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-11",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-11/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261011-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261011-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-11** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261011): - 3831b6ae - @Brumi-2021: Mic TX: Improv"
     },
     "halehound-stable": {
       "device": "HaleHound",
