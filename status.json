@@ -113,12 +113,12 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-11",
-      "publishedAt": "2026-10-11T00:33:31Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-11",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-11/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261011-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261011-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-11** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261011): - 3831b6ae - @Brumi-2021: Mic TX: Improv"
+      "version": "nightly-tag-2026-10-12",
+      "publishedAt": "2026-10-12T00:33:21Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-12",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-12/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261012-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261012-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-12** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261012): - 4bfa6d4a - @zxkmm: Warn when a PR targ"
     },
     "halehound-stable": {
       "device": "HaleHound",
@@ -153,12 +153,12 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.34.0",
-      "publishedAt": "2026-10-11T14:19:08Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.34.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.34.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.35.0",
+      "publishedAt": "2026-10-11T22:37:29Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.35.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.35.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
-      "note": "**Lava Lamp.** Squachy has never once known how much battery he had left. He'd just keep talking until the screen went black mid-sentence, like a guy who refuses to check his gas gauge. That ends today. On the boards tha"
+      "note": "**Pump Up the Jam.** For his entire career Squachy has been a mime. He waved, he danced, he got thrown across the screen and landed on his face, and not one peep came out of him. Meanwhile the two Freenove S3 boards had "
     },
     "phantom-stable": {
       "device": "Phantom",
