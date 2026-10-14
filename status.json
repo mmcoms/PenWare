@@ -73,12 +73,12 @@
     "flipper-unl": {
       "device": "Flipper Zero",
       "label": "Unleashed",
-      "version": "unlshd-093",
-      "publishedAt": "2026-09-12T20:52:59Z",
-      "url": "https://github.com/DarkFlippers/unleashed-firmware/releases/tag/unlshd-093",
+      "version": "unlshd-094",
+      "publishedAt": "2026-10-14T20:50:11Z",
+      "url": "https://github.com/DarkFlippers/unleashed-firmware/releases/tag/unlshd-094",
       "fileUrl": null,
       "fileName": null,
-      "note": "## Main changes - Current API: 88.9 - SubGHz: **Nice O-Code support** (52, 72 bits, Dynamic) - decode, save and emulate, plus the new **Nice O-Code** app that recovers the installer code from 4+ captures (by @zero-mega &"
+      "note": "## Main changes - Current API: 88.19 - iButton: **Choose which blanks a write may target** - new Settings -> Write Blanks list in the iButton app, where RW1990.1, RW1990.2, TM2004 and TM01x can each be switched on or off"
     },
     "flipper-rm": {
       "device": "Flipper Zero",
@@ -153,12 +153,12 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.37.0",
-      "publishedAt": "2026-10-13T21:46:22Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.37.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.37.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.38.0",
+      "publishedAt": "2026-10-14T20:45:10Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.38.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.38.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
-      "note": "**Video Killed the Radio Star.** For a whole day the T-Deck's screen and its LoRa radio fought over the same three wires, and every time the radio spoke, the picture tore, froze, or fell over. The screen was winning. The"
+      "note": "**Snoop Onto Them.** They snoop onto us, so Squachy snoops onto them. This time he learned what a police body camera sounds like over Bluetooth, what a gunshot sensor's own radio looks like, and the one little tag every "
     },
     "phantom-stable": {
       "device": "Phantom",
