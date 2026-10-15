@@ -113,12 +113,12 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-13",
-      "publishedAt": "2026-10-13T00:32:54Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-13",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-13/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261013-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261013-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-13** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261013): - b0d9973c - @A2ureIm4la: FM Radio: Rest"
+      "version": "nightly-tag-2026-10-15",
+      "publishedAt": "2026-10-15T00:35:33Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-15",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-15/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261015-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261015-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-15** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261015): - 2e8f9b24 - @zxkmm: optout of SA shared"
     },
     "halehound-stable": {
       "device": "HaleHound",
