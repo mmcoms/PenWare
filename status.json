@@ -3,12 +3,12 @@
     "banshee-stable": {
       "device": "Banshee",
       "label": "Stable",
-      "version": "v2.2.1",
-      "publishedAt": "2026-10-09T06:49:58Z",
-      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.1",
-      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.1/Banshee_C5.zip",
+      "version": "v2.2.2",
+      "publishedAt": "2026-10-15T09:30:23Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.2",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.2/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
-      "note": "### Added - Added 34 new timezones to the Date & Time picker covering the Americas, Europe, Africa, the Middle East, Asia and Oceania, and added UK British Summer Time (BST) support - Support for changing the Meshtastic "
+      "note": "### Added - Added NEW Sentry view that fuses the Flock camera detector, BLE device-detect and NEW WiFi camera/ALPR/Ring/Axon detectors - BLE device detect scan now recognises Meta glasses and Google Find My tags - Added "
     },
     "banshee-pre": {
       "device": "Banshee",
@@ -53,12 +53,12 @@
     "flipper-ofw": {
       "device": "Flipper Zero",
       "label": "Official",
-      "version": "1.4.3",
-      "publishedAt": "2025-12-05T19:43:45Z",
-      "url": "https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.4.3",
+      "version": "1.5.1",
+      "publishedAt": "2026-10-15T09:28:40Z",
+      "url": "https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.5.1",
       "fileUrl": null,
       "fileName": null,
-      "note": "*This is a bugfix release for Flipper Zero [Firmware 1.4.2](https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.4.2)* ## What's Changed * Infrared: Fix infrared CLI plugin MissingImports by @WillyJL in "
+      "note": "## TL;DR This release is mostly about polish and reliability: a long tail of fixes across NFC, storage and the rest of the system, plus a few new additions. ### New capabilities - **Sub-GHz**: Added two new protocols (El"
     },
     "flipper-mntm": {
       "device": "Flipper Zero",
@@ -123,9 +123,9 @@
     "halehound-stable": {
       "device": "HaleHound",
       "label": "Stable",
-      "version": "v3.9.5",
-      "publishedAt": "2026-08-30T01:47:21Z",
-      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v3.9.5",
+      "version": "v4.0",
+      "publishedAt": "2026-10-15T05:58:03Z",
+      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v4.0",
       "fileUrl": null,
       "fileName": null,
       "note": "_ _ .k$$$$$g, ,g$$$$$k. .k$$$$$$$$$$$a. .a$$$$$$$$$$$k. .J$$$$$?' `?$?^?, ,?^?$?` `?$$$$$L. JS$$SI!a, _.JS$ ?, ,? $SL._ ,a$!IS$$SL k$$$SI!:?$$$$$$$$$xu$$j j$$ux$$$$$$$$$?:!IS$$$k :I$$SI:J$$?*\"$$$$4^?*?: :?*?^4$$$$\"*?$$L:"
