@@ -153,12 +153,12 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.38.0",
-      "publishedAt": "2026-10-14T20:45:10Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.38.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.38.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.39.0",
+      "publishedAt": "2026-10-17T03:46:22Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.39.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.39.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
-      "note": "**Snoop Onto Them.** They snoop onto us, so Squachy snoops onto them. This time he learned what a police body camera sounds like over Bluetooth, what a gunshot sensor's own radio looks like, and the one little tag every "
+      "note": "**Radar Love.** The T-Deck got a page all its own for the radio: a radar, a line with a meteor on it, and both chats on one screen. Squachy now stares at it the way other people stare at a fireplace. He also learned some"
     },
     "phantom-stable": {
       "device": "Phantom",
