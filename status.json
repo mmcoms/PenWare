@@ -133,21 +133,21 @@
     "marauder-v8-stable": {
       "device": "Marauder V8",
       "label": "Stable",
-      "version": "v1.19.0",
-      "publishedAt": "2026-10-20T14:00:48Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.0",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.19.0/esp32_marauder_v1_19_0_20261019_v8.bin",
-      "fileName": "esp32_marauder_v1_19_0_20261019_v8.bin",
-      "note": "## What's Changed * Add [Seeed XIAO ESP32-C5](https://github.com/justcallmekoko/ESP32Marauder/wiki/Supported-Hardware) target by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1606 * Sync master "
+      "version": "v1.19.1",
+      "publishedAt": "2026-10-21T23:16:17Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.1",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.19.1/esp32_marauder_v1_19_1_20261021_v8.bin",
+      "fileName": "esp32_marauder_v1_19_1_20261021_v8.bin",
+      "note": "## What's Changed * Link relevant wiki docs in stable release notes by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1643 * Link wiki docs in stable release change bullets by @justcallmekoko in "
     },
     "marauder-v8-nightly": {
       "device": "Marauder V8",
       "label": "Nightly",
-      "version": "nightly_45f47da",
-      "publishedAt": "2026-10-20T03:18:03Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_45f47da",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_45f47da/esp32_marauder_v1_19_0_beta_20261020_v8.bin",
-      "fileName": "esp32_marauder_v1_19_0_beta_20261020_v8.bin",
+      "version": "nightly_e9bbcc8",
+      "publishedAt": "2026-10-22T03:17:39Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_e9bbcc8",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_e9bbcc8/esp32_marauder_v1_19_1_beta_20261022_v8.bin",
+      "fileName": "esp32_marauder_v1_19_1_beta_20261022_v8.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
     },
     "nm-cyd-c5-squachwatch": {
@@ -163,21 +163,21 @@
     "phantom-stable": {
       "device": "Phantom",
       "label": "Stable",
-      "version": "v1.19.0",
-      "publishedAt": "2026-10-20T14:00:48Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.0",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.19.0/esp32_marauder_v1_19_0_20261019_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_19_0_20261019_cyd_2432S024_guition.bin",
-      "note": "## What's Changed * Add [Seeed XIAO ESP32-C5](https://github.com/justcallmekoko/ESP32Marauder/wiki/Supported-Hardware) target by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1606 * Sync master "
+      "version": "v1.19.1",
+      "publishedAt": "2026-10-21T23:16:17Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.1",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.19.1/esp32_marauder_v1_19_1_20261021_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_19_1_20261021_cyd_2432S024_guition.bin",
+      "note": "## What's Changed * Link relevant wiki docs in stable release notes by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1643 * Link wiki docs in stable release change bullets by @justcallmekoko in "
     },
     "phantom-nightly": {
       "device": "Phantom",
       "label": "Nightly",
-      "version": "nightly_45f47da",
-      "publishedAt": "2026-10-20T03:18:03Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_45f47da",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_45f47da/esp32_marauder_v1_19_0_beta_20261020_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_19_0_beta_20261020_cyd_2432S024_guition.bin",
+      "version": "nightly_e9bbcc8",
+      "publishedAt": "2026-10-22T03:17:39Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_e9bbcc8",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_e9bbcc8/esp32_marauder_v1_19_1_beta_20261022_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_19_1_beta_20261022_cyd_2432S024_guition.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
     },
     "tembed-bruce": {
