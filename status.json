@@ -83,12 +83,12 @@
     "flipper-rm": {
       "device": "Flipper Zero",
       "label": "RogueMaster",
-      "version": "RM1001-2124-4f2e0620",
-      "publishedAt": "2026-10-02T01:30:55Z",
-      "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins/releases/tag/RM1001-2124-4f2e0620",
+      "version": "RM1024-1347-392a65c3",
+      "publishedAt": "2026-10-24T17:54:36Z",
+      "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins/releases/tag/RM1024-1347-392a65c3",
       "fileUrl": null,
       "fileName": null,
-      "note": "# Install GitHub Version With [WEB INSTALLER](https://lab.flipper.net/?url=https%3A%2F%2Frogue-master.net%2F%3Ffile%3DRM1001-2124-4f2e0620.tgz&channel=RM1001-2124-4f2e0620&version=0.420.0&target=f7) ## Thank you so much "
+      "note": "# Install GitHub Version With [WEB INSTALLER](https://lab.flipper.net/?url=https%3A%2F%2Frogue-master.net%2F%3Ffile%3DRM1024-1347-392a65c3.tgz&channel=RM1024-1347-392a65c3&version=0.420.0&target=f7) ## Thank you so much "
     },
     "freewili-stable": {
       "device": "FREE-WILi 2",
