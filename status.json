@@ -113,12 +113,12 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-25",
-      "publishedAt": "2026-10-25T00:32:18Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-25",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-25/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261025-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261025-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-25** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261025): - fd8edf69 - @opensourcesdr99: Fix dangl"
+      "version": "nightly-tag-2026-10-26",
+      "publishedAt": "2026-10-26T00:32:31Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-26",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-26/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261026-no-world-map.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261026-no-world-map.zip",
+      "note": "**Nightly release - 2026-10-26** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261026): - 9890b170 - @htotoo: fix compile warnin"
     },
     "halehound-stable": {
       "device": "HaleHound",
@@ -143,11 +143,11 @@
     "marauder-v8-nightly": {
       "device": "Marauder V8",
       "label": "Nightly",
-      "version": "nightly_9386f3c",
-      "publishedAt": "2026-10-25T03:17:33Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_9386f3c",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_9386f3c/esp32_marauder_v1_19_2_beta_20261025_v8.bin",
-      "fileName": "esp32_marauder_v1_19_2_beta_20261025_v8.bin",
+      "version": "nightly_8244eab",
+      "publishedAt": "2026-10-26T03:20:41Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_8244eab",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_8244eab/esp32_marauder_v1_19_2_beta_20261026_v8.bin",
+      "fileName": "esp32_marauder_v1_19_2_beta_20261026_v8.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
     },
     "nm-cyd-c5-squachwatch": {
@@ -173,11 +173,11 @@
     "phantom-nightly": {
       "device": "Phantom",
       "label": "Nightly",
-      "version": "nightly_9386f3c",
-      "publishedAt": "2026-10-25T03:17:33Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_9386f3c",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_9386f3c/esp32_marauder_v1_19_2_beta_20261025_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_19_2_beta_20261025_cyd_2432S024_guition.bin",
+      "version": "nightly_8244eab",
+      "publishedAt": "2026-10-26T03:20:41Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_8244eab",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_8244eab/esp32_marauder_v1_19_2_beta_20261026_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_19_2_beta_20261026_cyd_2432S024_guition.bin",
       "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
     },
     "tembed-bruce": {
