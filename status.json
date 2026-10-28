@@ -133,12 +133,12 @@
     "marauder-v8-stable": {
       "device": "Marauder V8",
       "label": "Stable",
-      "version": "v1.19.2",
-      "publishedAt": "2026-10-23T14:39:42Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.2",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.19.2/esp32_marauder_v1_19_2_20261023_v8.bin",
-      "fileName": "esp32_marauder_v1_19_2_20261023_v8.bin",
-      "note": "## What's Changed * Allocate CSI queue only while active by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1653 * Promote v1.19.2 memory reclamation to master by @justcallmekoko in https://github"
+      "version": "v1.20.0",
+      "publishedAt": "2026-10-28T18:22:11Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.20.0",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_v8.bin",
+      "fileName": "esp32_marauder_v1_20_0_20261028_v8.bin",
+      "note": "## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per-AP WiFi attack profiles](https://github.com/justcallmekoko"
     },
     "marauder-v8-nightly": {
       "device": "Marauder V8",
@@ -163,12 +163,12 @@
     "phantom-stable": {
       "device": "Phantom",
       "label": "Stable",
-      "version": "v1.19.2",
-      "publishedAt": "2026-10-23T14:39:42Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.2",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.19.2/esp32_marauder_v1_19_2_20261023_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_19_2_20261023_cyd_2432S024_guition.bin",
-      "note": "## What's Changed * Allocate CSI queue only while active by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1653 * Promote v1.19.2 memory reclamation to master by @justcallmekoko in https://github"
+      "version": "v1.20.0",
+      "publishedAt": "2026-10-28T18:22:11Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.20.0",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
+      "note": "## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per-AP WiFi attack profiles](https://github.com/justcallmekoko"
     },
     "phantom-nightly": {
       "device": "Phantom",
