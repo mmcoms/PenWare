@@ -3,7 +3,13 @@ export type GithubSpec = {
   owner: string;
   repo: string;
   channel: "stable" | "prerelease";
+  /** Keep only assets whose name contains this (case-insensitive). */
   assetIncludes?: string;
+  /** Drop assets whose name contains any of these (case-insensitive), e.g. "no-world-map". */
+  assetExcludes?: string[];
+  /** When a release ships several files you need (e.g. two chips), list every
+   *  matching asset in `files`, not just the primary. Default: one primary. */
+  multiAsset?: boolean;
 };
 
 export type BiscuitSpec = {
@@ -72,6 +78,12 @@ export type Device = {
   backup?: DeviceBackup;
 };
 
+/** One downloadable asset picked from a release. */
+export type FeedFile = {
+  name: string;
+  url: string;
+};
+
 export type FeedHit =
   | {
       id: string;
@@ -79,8 +91,13 @@ export type FeedHit =
       version: string;
       publishedAt: string | null;
       url: string;
+      /** Primary file (first of `files`). Kept for the single-file UI and
+       *  backward-compatible status.json. */
       fileUrl: string | null;
       fileName: string | null;
+      /** Every asset this feed needs. One entry for most devices; several when
+       *  a release ships multiple required files (e.g. Banshee C5 + S3). */
+      files: FeedFile[];
       note: string;
     }
   | {
