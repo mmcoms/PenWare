@@ -605,6 +605,10 @@
         {
           "title": "Flash DFU, then Mayhem, without unplugging",
           "detail": "On Windows run mayhem_flasher.bat from the release package. Choose the HackRF Pro / PortaPack entry, then the option that writes DFU and Mayhem in one pass. On Linux or macOS use current hackrf host tools (distro packages are often too old). Do not disconnect between the two writes. Put the battery and the hpro SD contents back after it finishes."
+        },
+        {
+          "title": "Apps grayed out after an SD update",
+          "detail": "An SD update does not always overwrite the old app files, so stale apps show grayed out. Fix it with a selective reset: Settings, Hard Reset, leave the bad-apps box CHECKED, UNCHECK Settings file and UNCHECK P.mem reset, then reboot. That clears the orphaned apps while keeping your settings and persistent memory."
         }
       ],
       "backup": {
