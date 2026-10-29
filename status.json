@@ -8,7 +8,17 @@
       "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.2",
       "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.2/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
-      "note": "### Added - Added NEW Sentry view that fuses the Flock camera detector, BLE device-detect and NEW WiFi camera/ALPR/Ring/Axon detectors - BLE device detect scan now recognises Meta glasses and Google Find My tags - Added "
+      "files": [
+        {
+          "name": "Banshee_C5.zip",
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.2/Banshee_C5.zip"
+        },
+        {
+          "name": "Banshee_S3.zip",
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.2/Banshee_S3.zip"
+        }
+      ],
+      "note": "Banshee_C5.zip, Banshee_S3.zip · ### Added - Added NEW Sentry view that fuses the Flock camera detector, BLE device-detect and NEW WiFi camera/ALPR/Ring/Axon detectors - BLE device detect scan now recognises Meta glasses"
     },
     "banshee-pre": {
       "device": "Banshee",
@@ -18,7 +28,17 @@
       "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre1",
       "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre1/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
-      "note": "Automated pre-release build for tag v2.2.3-pre1. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre1 Changelog: https://github.com/GhostESP-Revival/GhostESP/blob/v2.2.3-pre1/CHANGELOG.md You ca"
+      "files": [
+        {
+          "name": "Banshee_C5.zip",
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre1/Banshee_C5.zip"
+        },
+        {
+          "name": "Banshee_S3.zip",
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre1/Banshee_S3.zip"
+        }
+      ],
+      "note": "Banshee_C5.zip, Banshee_S3.zip · Automated pre-release build for tag v2.2.3-pre1. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre1 Changelog: https://github.com/GhostESP-Revival/GhostESP/blo"
     },
     "biscuit-pro-prod": {
       "device": "Biscuit Pro",
@@ -28,6 +48,7 @@
       "url": "https://firmware.biscuitshop.us/Biscuit_V1/Prod/manifest.json",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
     },
     "biscuit-ultra-prod": {
@@ -38,6 +59,7 @@
       "url": "https://firmware.biscuitshop.us/Biscuit_Ultra/Prod/manifest.json",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
     },
     "biscuit-crumb-prod": {
@@ -48,6 +70,7 @@
       "url": "https://firmware.biscuitshop.us/Biscuit_Crumb/Prod/manifest.json",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "HID Node Support (Pro/Ultra) Improved BLE Connection parameters. Node communication improvements."
     },
     "flipper-ofw": {
@@ -58,6 +81,7 @@
       "url": "https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.5.1",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "## TL;DR This release is mostly about polish and reliability: a long tail of fixes across NFC, storage and the rest of the system, plus a few new additions. ### New capabilities - **Sub-GHz**: Added two new protocols (El"
     },
     "flipper-mntm": {
@@ -68,6 +92,7 @@
       "url": "https://github.com/Next-Flip/Momentum-Firmware/releases/tag/mntm-012",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "## ⬇️ Download >### [🖥️ Web Updater (chrome)](https://momentum-fw.dev/update?version=mntm-012) [recommended] >### [☁️ Flipper Lab/App (chrome/mobile)](https://lab.flipper.net/?url=https://up.momentum-fw.dev/builds/firmw"
     },
     "flipper-unl": {
@@ -78,6 +103,7 @@
       "url": "https://github.com/DarkFlippers/unleashed-firmware/releases/tag/unlshd-094",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "## Main changes - Current API: 88.19 - iButton: **Choose which blanks a write may target** - new Settings -> Write Blanks list in the iButton app, where RW1990.1, RW1990.2, TM2004 and TM01x can each be switched on or off"
     },
     "flipper-rm": {
@@ -88,6 +114,7 @@
       "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins/releases/tag/RM1024-1347-392a65c3",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "# Install GitHub Version With [WEB INSTALLER](https://lab.flipper.net/?url=https%3A%2F%2Frogue-master.net%2F%3Ffile%3DRM1024-1347-392a65c3.tgz&channel=RM1024-1347-392a65c3&version=0.420.0&target=f7) ## Thank you so much "
     },
     "freewili-stable": {
@@ -98,6 +125,7 @@
       "url": "https://github.com/freewili/FREE-WILi2-Firmware/releases/tag/v10",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "# v10 - Stable firmware release Fresh builds of all three processors from one source revision. v10 fixes Main running its program from flash far below full speed, and Main reformatting its internal flash on every boot wi"
     },
     "mayhem-stable": {
@@ -106,19 +134,31 @@
       "version": "v2.4.0",
       "publishedAt": "2026-03-24T09:54:49Z",
       "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/v2.4.0",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/v2.4.0/COPY_TO_SDCARD_hpro_mayhem_v2.4.0-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_v2.4.0-no-world-map.zip",
-      "note": "# Stable release - v2.4.0 ## 🆕 HackRF Pro (PRALINE) Support Mayhem now officially supports the **HackRF Pro**! This includes iCE40 FPGA bitstream loading, MAX2831 transceiver driver, software RSSI, and dedicated diagnos"
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/v2.4.0/COPY_TO_SDCARD_hpro_mayhem_v2.4.0.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_v2.4.0.zip",
+      "files": [
+        {
+          "name": "COPY_TO_SDCARD_hpro_mayhem_v2.4.0.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/v2.4.0/COPY_TO_SDCARD_hpro_mayhem_v2.4.0.zip"
+        }
+      ],
+      "note": "COPY_TO_SDCARD_hpro_mayhem_v2.4.0.zip · # Stable release - v2.4.0 ## 🆕 HackRF Pro (PRALINE) Support Mayhem now officially supports the **HackRF Pro**! This includes iCE40 FPGA bitstream loading, MAX2831 transceiver driv"
     },
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-10-27",
-      "publishedAt": "2026-10-27T00:30:39Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-27",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-27/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261027-no-world-map.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261027-no-world-map.zip",
-      "note": "**Nightly release - 2026-10-27** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n_261027): - b72748e7 - @Brumi-2021: Capture: colle"
+      "version": "nightly-tag-2026-10-29",
+      "publishedAt": "2026-10-29T00:28:37Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-10-29",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-29/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261029.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261029.zip",
+      "files": [
+        {
+          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261029.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-10-29/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261029.zip"
+        }
+      ],
+      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261029.zip · **Nightly release - 2026-10-29** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
     },
     "halehound-stable": {
       "device": "HaleHound",
@@ -128,6 +168,7 @@
       "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v4.0",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "_ _ .k$$$$$g, ,g$$$$$k. .k$$$$$$$$$$$a. .a$$$$$$$$$$$k. .J$$$$$?' `?$?^?, ,?^?$?` `?$$$$$L. JS$$SI!a, _.JS$ ?, ,? $SL._ ,a$!IS$$SL k$$$SI!:?$$$$$$$$$xu$$j j$$ux$$$$$$$$$?:!IS$$$k :I$$SI:J$$?*\"$$$$4^?*?: :?*?^4$$$$\"*?$$L:"
     },
     "marauder-v8-stable": {
@@ -138,17 +179,29 @@
       "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.20.0",
       "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_v8.bin",
       "fileName": "esp32_marauder_v1_20_0_20261028_v8.bin",
-      "note": "## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per-AP WiFi attack profiles](https://github.com/justcallmekoko"
+      "files": [
+        {
+          "name": "esp32_marauder_v1_20_0_20261028_v8.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_v8.bin"
+        }
+      ],
+      "note": "esp32_marauder_v1_20_0_20261028_v8.bin · ## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per-AP WiFi attack pr"
     },
     "marauder-v8-nightly": {
       "device": "Marauder V8",
       "label": "Nightly",
-      "version": "nightly_8244eab",
-      "publishedAt": "2026-10-26T03:20:41Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_8244eab",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_8244eab/esp32_marauder_v1_19_2_beta_20261026_v8.bin",
-      "fileName": "esp32_marauder_v1_19_2_beta_20261026_v8.bin",
-      "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
+      "version": "nightly_511bb36",
+      "publishedAt": "2026-10-29T03:14:58Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_511bb36",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_511bb36/esp32_marauder_v1_20_0_beta_20261029_v8.bin",
+      "fileName": "esp32_marauder_v1_20_0_beta_20261029_v8.bin",
+      "files": [
+        {
+          "name": "esp32_marauder_v1_20_0_beta_20261029_v8.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_511bb36/esp32_marauder_v1_20_0_beta_20261029_v8.bin"
+        }
+      ],
+      "note": "esp32_marauder_v1_20_0_beta_20261029_v8.bin · [justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change befor"
     },
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
@@ -158,7 +211,13 @@
       "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.40.0",
       "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.40.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
-      "note": "**Wake Me Up Before You Go-Go.** SNOOZE grew a sense of time. Tap it once and Squachy hits the button for ten minutes, keep tapping and he rolls over for up to four hours. Meanwhile the T-Deck learned everybody's name on"
+      "files": [
+        {
+          "name": "nm-cyd-c5-firmware.bin",
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.40.0/nm-cyd-c5-firmware.bin"
+        }
+      ],
+      "note": "nm-cyd-c5-firmware.bin · **Wake Me Up Before You Go-Go.** SNOOZE grew a sense of time. Tap it once and Squachy hits the button for ten minutes, keep tapping and he rolls over for up to four hours. Meanwhile the T-Deck le"
     },
     "phantom-stable": {
       "device": "Phantom",
@@ -168,17 +227,29 @@
       "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.20.0",
       "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
       "fileName": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
-      "note": "## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per-AP WiFi attack profiles](https://github.com/justcallmekoko"
+      "files": [
+        {
+          "name": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin"
+        }
+      ],
+      "note": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin · ## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per"
     },
     "phantom-nightly": {
       "device": "Phantom",
       "label": "Nightly",
-      "version": "nightly_8244eab",
-      "publishedAt": "2026-10-26T03:20:41Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_8244eab",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_8244eab/esp32_marauder_v1_19_2_beta_20261026_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_19_2_beta_20261026_cyd_2432S024_guition.bin",
-      "note": "[justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change before a stable release. ## Before installing - Mat"
+      "version": "nightly_511bb36",
+      "publishedAt": "2026-10-29T03:14:58Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_511bb36",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_511bb36/esp32_marauder_v1_20_0_beta_20261029_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_20_0_beta_20261029_cyd_2432S024_guition.bin",
+      "files": [
+        {
+          "name": "esp32_marauder_v1_20_0_beta_20261029_cyd_2432S024_guition.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_511bb36/esp32_marauder_v1_20_0_beta_20261029_cyd_2432S024_guition.bin"
+        }
+      ],
+      "note": "esp32_marauder_v1_20_0_beta_20261029_cyd_2432S024_guition.bin · [justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored dat"
     },
     "tembed-bruce": {
       "device": "T-Embed",
@@ -188,17 +259,19 @@
       "url": "https://github.com/BruceDevices/firmware/releases/tag/1.16.1",
       "fileUrl": null,
       "fileName": null,
+      "files": [],
       "note": "# WiFi - Added detection for WPA3-PSK and WPA2/WPA3 #2750 by @0Zane - Wait for connection before accepting commands #2740 by @Pedro-Jesus-Fuentes-Morcillo - Brucegotchi now captures handshakes correctly #2724 by @Mysteri"
     },
     "pager-stable": {
       "device": "WiFi Pineapple Pager",
       "label": "Stable",
-      "version": "1.1.3-stable",
-      "publishedAt": "2026-10-03T20:22:50.0094Z",
+      "version": "2.0.0-stable",
+      "publishedAt": "2026-10-29T01:26:22.858018Z",
       "url": "https://downloads.hak5.org/pineapple/pager",
       "fileUrl": null,
       "fileName": null,
-      "note": "SHA-256 3073d6b8f91b46eddda20450f9b93f4e3e018e65f5943f4b0941a1fff7f8cd33 · WiFi Pineapple Pager 1.1.3 Add WiFi Client Mode indicator to the default status bar and Network Status Bar Add Quick Settings menu, replacing the first Power Menu item now that the sleep screen can be accessed with a sin"
+      "files": [],
+      "note": "SHA-256 17dab9757b6b9cf154b0a5f669498cabd0577a99a21df5029c62c386d03d7968 · WiFi Pineapple Pager 2.0.0 Highlights Boots twice as fast: ready in ~93s, down from up to ~215s. Faster and lighter: menus draw 20-35% faster, and background CPU use is reduced by two-thirds. Bluetooth recon: blue5, a ne"
     }
   }
 }
