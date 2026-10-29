@@ -23,22 +23,22 @@
     "banshee-pre": {
       "device": "Banshee",
       "label": "Prerelease",
-      "version": "v2.2.3-pre1",
-      "publishedAt": "2026-10-16T15:28:49Z",
-      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre1",
-      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre1/Banshee_C5.zip",
+      "version": "v2.2.3-pre2",
+      "publishedAt": "2026-10-29T15:55:44Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre2",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre2/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
       "files": [
         {
           "name": "Banshee_C5.zip",
-          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre1/Banshee_C5.zip"
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre2/Banshee_C5.zip"
         },
         {
           "name": "Banshee_S3.zip",
-          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre1/Banshee_S3.zip"
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre2/Banshee_S3.zip"
         }
       ],
-      "note": "Banshee_C5.zip, Banshee_S3.zip · Automated pre-release build for tag v2.2.3-pre1. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre1 Changelog: https://github.com/GhostESP-Revival/GhostESP/blo"
+      "note": "Banshee_C5.zip, Banshee_S3.zip · Automated pre-release build for tag v2.2.3-pre2. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre2 Changelog: https://github.com/GhostESP-Revival/GhostESP/blo"
     },
     "biscuit-pro-prod": {
       "device": "Biscuit Pro",
