@@ -764,6 +764,10 @@
         {
           "title": "Leave it connected until the tool finishes",
           "detail": "Do not swap cables or tap reset mid-write. If the port disappears, re-enter download mode and start the installer again rather than power-cycling a half-written flash."
+        },
+        {
+          "title": "No COM port, board undiscoverable",
+          "detail": "If the V8 will not enumerate and no serial/COM port appears, the installer cannot see it. First rule out the basics: use a data USB-C cable, not charge-only, and try another cable and port. If it still will not show, force the ROM download boot above (hold BOOT, plug in, release BOOT) so the chip presents a port even when a bad or partial image is on it, then flash the full installer package. A plain app .bin is what leaves it undiscoverable; the full install brings the port back."
         }
       ],
       "backup": {
@@ -913,6 +917,10 @@
         {
           "title": "Write the Guition bin, not another CYD",
           "detail": "If you flashed _cyd_2432S028 or a 2-USB build, go back to download mode and flash _cyd_2432S024_guition.bin from the same Marauder release. A full install includes bootloader and partitions, not only the app bin, when the unit no longer boots."
+        },
+        {
+          "title": "No COM port, board undiscoverable",
+          "detail": "If no serial/COM port appears and the installer cannot find the board, check the basics first: a data USB-C cable, not charge-only, and on a two-port CYD the socket that enumerates serial, not the charge-only one. If it still will not show, force download mode above (hold BOOT, plug in, release BOOT) so the chip presents a port even with a bad or partial image on it, then flash the full _cyd_2432S024_guition.bin installer package. An app-only bin is what leaves it undiscoverable."
         }
       ],
       "backup": {
