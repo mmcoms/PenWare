@@ -32,6 +32,42 @@ function plain(value) {
     .slice(0, 220);
 }
 
+/**
+ * Pick the right release asset(s). Pure and network-free so it can be tested.
+ * Must stay in lockstep with pickAssets() in src/lib/penware/check.ts.
+ *
+ * Filters by assetIncludes, drops anything in assetExcludes, then ranks the
+ * survivors so the fullest/most-flashable build wins (stripped variants like
+ * "-no-world-map" are demoted). multiAsset returns every survivor, so a
+ * release that ships two required files (Banshee C5 + S3) keeps both.
+ */
+export function pickAssets(assets, spec) {
+  const assetIncludes = spec.assetIncludes;
+  const assetExcludes = spec.assetExcludes ?? [];
+  const multiAsset = spec.multiAsset ?? false;
+  if (!assetIncludes) return { files: [], matchedNames: [] };
+
+  const needle = assetIncludes.toLowerCase();
+  const bans = assetExcludes.map((x) => x.toLowerCase());
+  const demote = /(no-world-map|no-map|nomap|-lite|-min|debug|\.elf$|\.sha256$|\.txt$|\.md$|\.asc$|\.sig$)/i;
+
+  const ranked = (assets ?? [])
+    .filter((a) => a.name)
+    .filter((a) => {
+      const n = a.name.toLowerCase();
+      return n.includes(needle) && !bans.some((b) => n.includes(b));
+    })
+    .map((a) => ({
+      file: { name: a.name, url: a.browser_download_url ?? "" },
+      score: (demote.test(a.name) ? 1 : 0) * 1000 + a.name.length,
+    }))
+    .filter((r) => r.file.url)
+    .sort((x, y) => x.score - y.score);
+
+  const files = multiAsset ? ranked.map((r) => r.file) : ranked.slice(0, 1).map((r) => r.file);
+  return { files, matchedNames: ranked.map((r) => r.file.name) };
+}
+
 export function makeChecker(fetchImpl = fetch, token = process.env.GITHUB_TOKEN) {
   const cache = new Map();
 
@@ -68,17 +104,21 @@ export function makeChecker(fetchImpl = fetch, token = process.env.GITHUB_TOKEN)
   return async function checkOne(spec) {
     if (spec.kind === "github-release") {
       const release = await githubRelease(spec.owner, spec.repo, spec.channel);
-      const needle = spec.assetIncludes?.toLowerCase();
-      const asset = needle
-        ? (release.assets ?? []).find((a) => a.name?.toLowerCase().includes(needle))
-        : undefined;
+      const { files, matchedNames } = pickAssets(release.assets ?? [], spec);
+      const primary = files[0] ?? null;
+      const noteParts = [
+        matchedNames.length ? matchedNames.slice(0, 3).join(", ") : "",
+        !primary && spec.assetIncludes ? `No file matching ${spec.assetIncludes}` : "",
+        plain(release.body),
+      ].filter(Boolean);
       return {
         version: release.tag_name,
         publishedAt: release.published_at ?? null,
         url: release.html_url ?? null,
-        fileUrl: asset?.browser_download_url ?? null,
-        fileName: asset?.name ?? null,
-        note: plain(release.body),
+        fileUrl: primary?.url ?? null,
+        fileName: primary?.name ?? null,
+        files,
+        note: noteParts.join(" · ").slice(0, 220),
       };
     }
     if (spec.kind === "biscuit") {
@@ -93,6 +133,7 @@ export function makeChecker(fetchImpl = fetch, token = process.env.GITHUB_TOKEN)
         url,
         fileUrl: null,
         fileName: null,
+        files: [],
         note: plain(typeof body.notes === "string" ? body.notes : ""),
       };
     }
@@ -106,6 +147,7 @@ export function makeChecker(fetchImpl = fetch, token = process.env.GITHUB_TOKEN)
         url: "https://downloads.hak5.org/pineapple/pager",
         fileUrl: null,
         fileName: null,
+        files: [],
         note: [row.checksum ? `SHA-256 ${row.checksum}` : "", plain(row.changelog)].filter(Boolean).join(" · "),
       };
     }
@@ -150,7 +192,11 @@ export function renderAlert(changes) {
   ];
   for (const c of changes) {
     lines.push(`### ${c.device} · ${c.label} · ${c.version}`);
-    if (c.fileName && c.fileUrl) lines.push(`File: [${c.fileName}](${c.fileUrl})`);
+    if (Array.isArray(c.files) && c.files.length > 1) {
+      for (const f of c.files) lines.push(`File: [${f.name}](${f.url})`);
+    } else if (c.fileName && c.fileUrl) {
+      lines.push(`File: [${c.fileName}](${c.fileUrl})`);
+    }
     if (c.note) lines.push(`> ${c.note}`);
     lines.push("");
   }

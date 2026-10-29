@@ -31,7 +31,8 @@
             "owner": "GhostESP-Revival",
             "repo": "GhostESP",
             "channel": "stable",
-            "assetIncludes": "Banshee_"
+            "assetIncludes": "Banshee_",
+            "multiAsset": true
           }
         },
         {
@@ -43,7 +44,8 @@
             "owner": "GhostESP-Revival",
             "repo": "GhostESP",
             "channel": "prerelease",
-            "assetIncludes": "Banshee_"
+            "assetIncludes": "Banshee_",
+            "multiAsset": true
           }
         }
       ],
@@ -558,7 +560,8 @@
             "owner": "portapack-mayhem",
             "repo": "mayhem-firmware",
             "channel": "stable",
-            "assetIncludes": "hpro"
+            "assetIncludes": "COPY_TO_SDCARD_hpro",
+            "assetExcludes": ["no-world-map"]
           }
         },
         {
@@ -570,7 +573,8 @@
             "owner": "portapack-mayhem",
             "repo": "mayhem-firmware",
             "channel": "prerelease",
-            "assetIncludes": "hpro"
+            "assetIncludes": "COPY_TO_SDCARD_hpro",
+            "assetExcludes": ["no-world-map"]
           }
         }
       ],

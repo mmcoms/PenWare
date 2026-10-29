@@ -1,6 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
-import type { Device, FeedHit, FeedSpec } from "./types.ts";
+import type { Device, FeedFile, FeedHit, FeedSpec } from "./types.ts";
 
 const feedSchema = z.object({
   id: z.string().min(1).max(80),
@@ -11,6 +11,8 @@ const feedSchema = z.object({
       repo: z.string().regex(/^[A-Za-z0-9_.-]+$/),
       channel: z.enum(["stable", "prerelease"]),
       assetIncludes: z.string().max(80).optional(),
+      assetExcludes: z.array(z.string().max(80)).max(8).optional(),
+      multiAsset: z.boolean().optional(),
     }),
     z.object({
       kind: z.literal("biscuit"),
@@ -146,19 +148,72 @@ async function githubRelease(owner: string, repo: string, channel: "stable" | "p
   });
 }
 
-function fromGithub(id: string, release: GithubRelease, assetIncludes?: string): FeedHit {
+type RawAsset = { name?: string; browser_download_url?: string };
+
+export type AssetFilter = {
+  assetIncludes?: string;
+  assetExcludes?: string[];
+  multiAsset?: boolean;
+};
+
+/**
+ * Pick the right release asset(s). Pure and network-free so it can be tested.
+ *
+ * The old code took the FIRST asset whose name contained the keyword. When a
+ * release ships several files that all contain the keyword (e.g. Mayhem's
+ * hpro build has both a plain SD zip and a "-no-world-map" zip), GitHub's
+ * listing order decided the winner — which is how HackRF ended up pointing at
+ * the no-map build.
+ *
+ * Now: filter by include, drop anything in exclude, then RANK the survivors so
+ * the fullest, most-flashable build wins. For multiAsset feeds, return every
+ * survivor (Banshee needs both its C5 and S3 zips).
+ */
+export function pickAssets(
+  assets: RawAsset[],
+  filter: AssetFilter,
+): { files: FeedFile[]; matchedNames: string[] } {
+  const { assetIncludes, assetExcludes = [], multiAsset = false } = filter;
+  if (!assetIncludes) return { files: [], matchedNames: [] };
+
+  const needle = assetIncludes.toLowerCase();
+  const bans = assetExcludes.map((x) => x.toLowerCase());
+
+  const named = assets.filter(
+    (a): a is { name: string; browser_download_url?: string } => Boolean(a.name),
+  );
+  const survivors = named.filter((a) => {
+    const n = a.name.toLowerCase();
+    if (!n.includes(needle)) return false;
+    return !bans.some((b) => n.includes(b));
+  });
+
+  // Lower score sorts first = preferred. Penalise obvious "lesser" variants so
+  // that, all else equal, the plain full build beats a stripped/aux one.
+  const demote = /(no-world-map|no-map|nomap|-lite|-min|debug|\.elf$|\.sha256$|\.txt$|\.md$|\.asc$|\.sig$)/i;
+  const ranked = survivors
+    .map((a) => ({
+      file: { name: a.name, url: a.browser_download_url ?? "" },
+      score: (demote.test(a.name) ? 1 : 0) * 1000 + a.name.length, // shorter, undemoted name wins ties
+    }))
+    .filter((r) => r.file.url)
+    .sort((x, y) => x.score - y.score);
+
+  const files = multiAsset ? ranked.map((r) => r.file) : ranked.slice(0, 1).map((r) => r.file);
+  return { files, matchedNames: ranked.map((r) => r.file.name) };
+}
+
+function fromGithub(
+  id: string,
+  release: GithubRelease,
+  filter: AssetFilter,
+): FeedHit {
   const assets = release.assets ?? [];
-  const match = assetIncludes
-    ? assets.find((asset) => asset.name?.toLowerCase().includes(assetIncludes.toLowerCase()))
-    : undefined;
-  const names = assetIncludes
-    ? assets
-        .map((asset) => asset.name ?? "")
-        .filter((name) => name.toLowerCase().includes(assetIncludes.toLowerCase()))
-    : [];
+  const { files, matchedNames } = pickAssets(assets, filter);
+  const primary = files[0] ?? null;
   const noteParts = [
-    match ? names.slice(0, 3).join(", ") : "",
-    !match && assetIncludes ? `No file matching ${assetIncludes}` : "",
+    matchedNames.length ? matchedNames.slice(0, 3).join(", ") : "",
+    !primary && filter.assetIncludes ? `No file matching ${filter.assetIncludes}` : "",
     plain(release.body),
   ].filter(Boolean);
   return {
@@ -167,8 +222,9 @@ function fromGithub(id: string, release: GithubRelease, assetIncludes?: string):
     version: release.tag_name ?? "unknown",
     publishedAt: release.published_at ?? null,
     url: release.html_url ?? `https://github.com`,
-    fileUrl: match?.browser_download_url ?? null,
-    fileName: match?.name ?? null,
+    fileUrl: primary?.url ?? null,
+    fileName: primary?.name ?? null,
+    files,
     note: noteParts.join(" · ").slice(0, 280),
   };
 }
@@ -177,7 +233,11 @@ async function checkOne(id: string, spec: FeedSpec): Promise<FeedHit> {
   try {
     if (spec.kind === "github-release") {
       const release = await githubRelease(spec.owner, spec.repo, spec.channel);
-      return fromGithub(id, release, spec.assetIncludes);
+      return fromGithub(id, release, {
+        assetIncludes: spec.assetIncludes,
+        assetExcludes: spec.assetExcludes,
+        multiAsset: spec.multiAsset,
+      });
     }
     if (spec.kind === "biscuit") {
       const key = `biscuit:${spec.product}:${spec.channel}`;
@@ -202,6 +262,7 @@ async function checkOne(id: string, spec: FeedSpec): Promise<FeedHit> {
         url: `https://firmware.biscuitshop.us/${spec.product}/${spec.channel}/manifest.json`,
         fileUrl: null,
         fileName: null,
+        files: [],
         note: plain(typeof body.notes === "string" ? body.notes : ""),
       };
     }
@@ -225,6 +286,7 @@ async function checkOne(id: string, spec: FeedSpec): Promise<FeedHit> {
       url: "https://downloads.hak5.org/pineapple/pager",
       fileUrl: null,
       fileName: null,
+      files: [],
       note: [row.checksum ? `SHA-256 ${row.checksum}` : "", plain(row.changelog)]
         .filter(Boolean)
         .join(" · ")

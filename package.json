@@ -1,5 +1,6 @@
 {
   "name": "penware",
+  "version": "0.2.0",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -11,6 +12,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
+    "test": "node --test \"scripts/**/*.test.mjs\"",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

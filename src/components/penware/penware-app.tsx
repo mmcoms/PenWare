@@ -283,7 +283,9 @@ export function PenwareApp() {
               <Radio className="size-5" aria-hidden="true" />
             </span>
             <div>
-              <p className="font-mono text-xs tracking-widest text-lime">PENWARE</p>
+              <p className="font-mono text-xs tracking-widest text-lime">
+                PENWARE <span className="text-muted">v{__APP_VERSION__}</span>
+              </p>
               <h1 className="text-lg font-semibold leading-tight">Firmware watch</h1>
             </div>
           </div>
@@ -704,7 +706,13 @@ function FeedRow({
           <a href={hit.url} target="_blank" rel="noreferrer" className="text-sm text-lime">
             Release
           </a>
-          {hit.fileUrl ? (
+          {hit.files && hit.files.length > 1 ? (
+            hit.files.map((f) => (
+              <a key={f.url} href={f.url} target="_blank" rel="noreferrer" className="text-sm text-lime">
+                {f.name}
+              </a>
+            ))
+          ) : hit.fileUrl ? (
             <a href={hit.fileUrl} target="_blank" rel="noreferrer" className="text-sm text-lime">
               {hit.fileName ?? "File"}
             </a>
