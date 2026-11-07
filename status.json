@@ -206,18 +206,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.40.0",
-      "publishedAt": "2026-10-23T13:33:48Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.40.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.40.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.41.0",
+      "publishedAt": "2026-11-07T18:23:03Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.41.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.41.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.40.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.41.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Wake Me Up Before You Go-Go.** SNOOZE grew a sense of time. Tap it once and Squachy hits the button for ten minutes, keep tapping and he rolls over for up to four hours. Meanwhile the T-Deck le"
+      "note": "nm-cyd-c5-firmware.bin · **Return to Sender.** The T-Deck learned to whisper. Until now everything it said on LoRa went out to the whole channel, like shouting across a campground. Now you can send one person a private m"
     },
     "phantom-stable": {
       "device": "Phantom",
