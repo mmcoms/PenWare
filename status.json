@@ -163,9 +163,9 @@
     "halehound-stable": {
       "device": "HaleHound",
       "label": "Stable",
-      "version": "v4.1",
-      "publishedAt": "2026-11-10T04:06:57Z",
-      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v4.1",
+      "version": "v4.1.5",
+      "publishedAt": "2026-11-12T03:33:14Z",
+      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v4.1.5",
       "fileUrl": null,
       "fileName": null,
       "files": [],
@@ -206,18 +206,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.41.0",
-      "publishedAt": "2026-11-07T18:23:03Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.41.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.41.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.42.0",
+      "publishedAt": "2026-11-12T01:14:11Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.42.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.41.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Return to Sender.** The T-Deck learned to whisper. Until now everything it said on LoRa went out to the whole channel, like shouting across a campground. Now you can send one person a private m"
+      "note": "nm-cyd-c5-firmware.bin · **Breathe the Pressure.** Squachy has been sniffing the airwaves for cameras, trackers and skimmers since day one. Now he can feel the room itself. HUMAN SENSING turns your board's own WiFi radio"
     },
     "phantom-stable": {
       "device": "Phantom",
