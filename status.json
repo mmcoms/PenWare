@@ -98,13 +98,13 @@
     "flipper-unl": {
       "device": "Flipper Zero",
       "label": "Unleashed",
-      "version": "unlshd-094",
-      "publishedAt": "2026-10-14T20:50:11Z",
-      "url": "https://github.com/DarkFlippers/unleashed-firmware/releases/tag/unlshd-094",
+      "version": "unlshd-095",
+      "publishedAt": "2026-11-11T17:15:37Z",
+      "url": "https://github.com/DarkFlippers/unleashed-firmware/releases/tag/unlshd-095",
       "fileUrl": null,
       "fileName": null,
       "files": [],
-      "note": "## Main changes - Current API: 88.19 - iButton: **Choose which blanks a write may target** - new Settings -> Write Blanks list in the iButton app, where RW1990.1, RW1990.2, TM2004 and TM01x can each be switched on or off"
+      "note": "## Main changes - Current API: 88.26 - SubGHz: **KeeLoq remotes that send at half the usual rate (Te 200us) are now decoded, and sent back at the rate they were received at** - SubGHz: **A KeeLoq remote sending at half r"
     },
     "flipper-rm": {
       "device": "Flipper Zero",
@@ -147,18 +147,18 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-11-09",
-      "publishedAt": "2026-11-09T00:26:21Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-09",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-09/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261109.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261109.zip",
+      "version": "nightly-tag-2026-11-12",
+      "publishedAt": "2026-11-12T00:27:45Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-12",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-12/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261112.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261112.zip",
       "files": [
         {
-          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261109.zip",
-          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-09/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261109.zip"
+          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261112.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-12/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261112.zip"
         }
       ],
-      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261109.zip · **Nightly release - 2026-11-09** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
+      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261112.zip · **Nightly release - 2026-11-12** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
     },
     "halehound-stable": {
       "device": "HaleHound",
