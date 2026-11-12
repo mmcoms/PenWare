@@ -206,18 +206,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.42.0",
-      "publishedAt": "2026-11-12T01:14:11Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.42.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.42.1",
+      "publishedAt": "2026-11-12T23:29:52Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.42.1",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.1/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.1/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Breathe the Pressure.** Squachy has been sniffing the airwaves for cameras, trackers and skimmers since day one. Now he can feel the room itself. HUMAN SENSING turns your board's own WiFi radio"
+      "note": "nm-cyd-c5-firmware.bin · **Just Breathe.** v1.42.0 taught every board to feel the room through WiFi, and then we shipped the browser emulator without it. The version number said 1.42.0. The Settings menu said \"what sensi"
     },
     "phantom-stable": {
       "device": "Phantom",
@@ -254,13 +254,13 @@
     "tembed-bruce": {
       "device": "T-Embed",
       "label": "Bruce stable",
-      "version": "1.16.1",
-      "publishedAt": "2026-08-11T16:36:36Z",
-      "url": "https://github.com/BruceDevices/firmware/releases/tag/1.16.1",
+      "version": "1.17",
+      "publishedAt": "2026-11-12T22:26:17Z",
+      "url": "https://github.com/BruceDevices/firmware/releases/tag/1.17",
       "fileUrl": null,
       "fileName": null,
       "files": [],
-      "note": "# WiFi - Added detection for WPA3-PSK and WPA2/WPA3 #2750 by @0Zane - Wait for connection before accepting commands #2740 by @Pedro-Jesus-Fuentes-Morcillo - Brucegotchi now captures handshakes correctly #2724 by @Mysteri"
+      "note": "# WiFi - Native WiFite (WPS) app added to the Wi-Fi menu #2980 by @salikisazazil - WiFite made available to more devices 6d181b9e by @pr3y - SDR: raw I/Q takeover of the ESP32-S3 WiFi radio 4519a79e by @pr3y - SDR displa"
     },
     "pager-stable": {
       "device": "WiFi Pineapple Pager",
