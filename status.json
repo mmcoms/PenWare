@@ -147,18 +147,18 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-11-13",
-      "publishedAt": "2026-11-13T00:24:24Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-13",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-13/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261113.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261113.zip",
+      "version": "nightly-tag-2026-11-14",
+      "publishedAt": "2026-11-14T00:26:59Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-14",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-14/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261114.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261114.zip",
       "files": [
         {
-          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261113.zip",
-          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-13/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261113.zip"
+          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261114.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-14/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261114.zip"
         }
       ],
-      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261113.zip · **Nightly release - 2026-11-13** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
+      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261114.zip · **Nightly release - 2026-11-14** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
     },
     "halehound-stable": {
       "device": "HaleHound",
@@ -206,18 +206,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.42.1",
-      "publishedAt": "2026-11-12T23:29:52Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.42.1",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.1/nm-cyd-c5-firmware.bin",
+      "version": "v1.43.0",
+      "publishedAt": "2026-11-14T00:53:11Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.43.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.43.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.42.1/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.43.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Just Breathe.** v1.42.0 taught every board to feel the room through WiFi, and then we shipped the browser emulator without it. The version number said 1.42.0. The Settings menu said \"what sensi"
+      "note": "nm-cyd-c5-firmware.bin · **When You're Bored Then You're Boring.** Boring Mode used to take Squachy away and leave you a black screen and a detector. Honest, but a bit grim. It has been to night school. It's TERMINAL MOD"
     },
     "phantom-stable": {
       "device": "Phantom",
