@@ -206,18 +206,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.43.0",
-      "publishedAt": "2026-11-14T00:53:11Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.43.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.43.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.44.0",
+      "publishedAt": "2026-11-14T21:58:47Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.44.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.44.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.43.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.44.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **When You're Bored Then You're Boring.** Boring Mode used to take Squachy away and leave you a black screen and a detector. Honest, but a bit grim. It has been to night school. It's TERMINAL MOD"
+      "note": "nm-cyd-c5-firmware.bin · **Unbreaking Bad.** Squachy has been told to say sorry, so here it is, in his words: \"The boss broke the scanner. I watched it happen. I said nothing. I am also sorry. Mostly about the saying not"
     },
     "phantom-stable": {
       "device": "Phantom",
