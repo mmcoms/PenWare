@@ -83,12 +83,12 @@ function formatBytes(bytes: number) {
 }
 
 async function sha256Hex(data: Uint8Array) {
-  const digest = await crypto.subtle.digest("SHA-256", data);
+  const digest = await crypto.subtle.digest("SHA-256", data as BufferSource);
   return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
 function saveFile(name: string, data: Uint8Array) {
-  const url = URL.createObjectURL(new Blob([data], { type: "application/octet-stream" }));
+  const url = URL.createObjectURL(new Blob([data as BlobPart], { type: "application/octet-stream" }));
   const link = document.createElement("a");
   link.href = url;
   link.download = name;

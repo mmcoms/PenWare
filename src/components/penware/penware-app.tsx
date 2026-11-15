@@ -279,7 +279,7 @@ export function PenwareApp() {
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
             <span className="flex size-11 items-center justify-center overflow-hidden rounded-card bg-surface">
-              <img src="/penware-logo.png" alt="PenWare" className="size-11 object-cover" />
+              <img src="/penware-logo.png?v=0.3.0" alt="PenWare" className="size-11 object-cover" />
             </span>
             <div>
               <p className="font-mono text-xs tracking-widest text-lime">

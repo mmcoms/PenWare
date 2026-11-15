@@ -7,6 +7,6 @@
   "background_color": "#10120e",
   "theme_color": "#10120e",
   "icons": [
-    { "src": "/penware-logo.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" }
+    { "src": "/penware-logo.png?v=0.3.0", "sizes": "1024x1024", "type": "image/png", "purpose": "any" }
   ]
 }
