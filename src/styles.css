@@ -4,15 +4,15 @@
 @theme {
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
-  --color-bg: #10120e;
-  --color-surface: #181b16;
-  --color-surface-2: #22271e;
-  --color-fg: #e7ecdf;
-  --color-muted: #8e9684;
-  --color-line: #2c3228;
-  --color-lime: #d2f25c;
-  --color-lime-ink: #1a2208;
-  --color-alert: #ff5c39;
+  --color-bg: #0f1012;
+  --color-surface: #17191c;
+  --color-surface-2: #212429;
+  --color-fg: #ededf0;
+  --color-muted: #9398a1;
+  --color-line: #2a2e34;
+  --color-lime: #f26a1b;
+  --color-lime-ink: #140a02;
+  --color-alert: #ff4d4d;
   --radius-card: 1rem;
 }
 

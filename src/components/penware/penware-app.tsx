@@ -8,7 +8,6 @@ import {
   ExternalLink,
   Github,
   Plus,
-  Radio,
   RefreshCw,
   Trash2,
 } from "lucide-react";
@@ -279,8 +278,8 @@ export function PenwareApp() {
       <header className="sticky top-0 z-10 -mx-4 mb-4 border-b border-line bg-bg px-4 pb-3 pt-1">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <span className="flex size-11 items-center justify-center rounded-card bg-surface text-lime">
-              <Radio className="size-5" aria-hidden="true" />
+            <span className="flex size-11 items-center justify-center overflow-hidden rounded-card bg-surface">
+              <img src="/penware-logo.png" alt="PenWare" className="size-11 object-cover" />
             </span>
             <div>
               <p className="font-mono text-xs tracking-widest text-lime">
@@ -710,11 +709,15 @@ function FeedRow({
             hit.files.map((f) => (
               <a key={f.url} href={f.url} target="_blank" rel="noreferrer" className="text-sm text-lime">
                 {f.name}
+                {fileHint(f.name) ? <span className="text-muted"> · {fileHint(f.name)}</span> : null}
               </a>
             ))
           ) : hit.fileUrl ? (
             <a href={hit.fileUrl} target="_blank" rel="noreferrer" className="text-sm text-lime">
               {hit.fileName ?? "File"}
+              {fileHint(hit.fileName ?? "") ? (
+                <span className="text-muted"> · {fileHint(hit.fileName ?? "")}</span>
+              ) : null}
             </a>
           ) : null}
           <button type="button" onClick={() => onInstalled(hit.version)} className="inline-flex items-center gap-1 text-sm">
@@ -957,6 +960,16 @@ async function toggleNotify(
   const next = await Notification.requestPermission();
   setPerm(next);
   setNotify(next === "granted");
+}
+
+// What to do with a downloaded firmware file, so nobody tries to "expand" a raw
+// image. Order matters: .ppfw.tar is flashed on the device, not extracted.
+function fileHint(name: string): string {
+  const n = name.toLowerCase();
+  if (n.endsWith(".ppfw.tar") || n.endsWith(".ota")) return "flash on device";
+  if (/\.(bin|uf2|hex|elf|img|dfu|zip\.bin)$/.test(n)) return "flash — don't open";
+  if (/\.(zip|tar|tar\.gz|tgz|gz|xz|7z|rar)$/.test(n)) return "extract first";
+  return "";
 }
 
 function download(filename: string, text: string) {
