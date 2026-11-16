@@ -214,18 +214,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.45.0",
-      "publishedAt": "2026-11-15T02:11:47Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.45.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.45.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.46.0",
+      "publishedAt": "2026-11-16T21:30:53Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.46.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.46.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.45.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.46.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Skate Better.** No new tricks this time. We went back over the fundamentals, found every spot where we kept eating pavement, and fixed it. Squachy: \"I had the knee pads on the whole time. Mostl"
+      "note": "nm-cyd-c5-firmware.bin · **They See Me Rollin.** The T-Deck got a ball to roll, your board learned to watch for names you pick, and a stack of things that tripped people up got fixed. Squachy: \"I'm not saying I'm being f"
     },
     "phantom-stable": {
       "device": "Phantom",
