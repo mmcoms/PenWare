@@ -23,22 +23,30 @@
     "banshee-pre": {
       "device": "Banshee",
       "label": "Prerelease",
-      "version": "v2.2.3-pre3",
-      "publishedAt": "2026-11-06T17:32:16Z",
-      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre3",
-      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre3/Banshee_C5.zip",
+      "version": "v2.2.3-pre4",
+      "publishedAt": "2026-11-16T06:10:20Z",
+      "url": "https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre4",
+      "fileUrl": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre4/Banshee_C5.zip",
       "fileName": "Banshee_C5.zip",
       "files": [
         {
           "name": "Banshee_C5.zip",
-          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre3/Banshee_C5.zip"
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre4/Banshee_C5.zip"
         },
         {
           "name": "Banshee_S3.zip",
-          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre3/Banshee_S3.zip"
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre4/Banshee_S3.zip"
+        },
+        {
+          "name": "Banshee_Lite_C5.zip",
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre4/Banshee_Lite_C5.zip"
+        },
+        {
+          "name": "Banshee_Lite_S3.zip",
+          "url": "https://github.com/GhostESP-Revival/GhostESP/releases/download/v2.2.3-pre4/Banshee_Lite_S3.zip"
         }
       ],
-      "note": "Banshee_C5.zip, Banshee_S3.zip · Automated pre-release build for tag v2.2.3-pre3. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre3 Changelog: https://github.com/GhostESP-Revival/GhostESP/blo"
+      "note": "Banshee_C5.zip, Banshee_S3.zip, Banshee_Lite_C5.zip · Automated pre-release build for tag v2.2.3-pre4. Release: https://github.com/GhostESP-Revival/GhostESP/releases/tag/v2.2.3-pre4 Changelog: https://github.com/GhostESP"
     },
     "biscuit-pro-prod": {
       "device": "Biscuit Pro",
