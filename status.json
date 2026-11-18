@@ -117,13 +117,13 @@
     "flipper-rm": {
       "device": "Flipper Zero",
       "label": "RogueMaster",
-      "version": "RM1024-1347-392a65c3",
-      "publishedAt": "2026-10-24T17:54:36Z",
-      "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins/releases/tag/RM1024-1347-392a65c3",
+      "version": "RM1117-1555-26299030",
+      "publishedAt": "2026-11-17T21:06:41Z",
+      "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins/releases/tag/RM1117-1555-26299030",
       "fileUrl": null,
       "fileName": null,
       "files": [],
-      "note": "# Install GitHub Version With [WEB INSTALLER](https://lab.flipper.net/?url=https%3A%2F%2Frogue-master.net%2F%3Ffile%3DRM1024-1347-392a65c3.tgz&channel=RM1024-1347-392a65c3&version=0.420.0&target=f7) ## Thank you so much "
+      "note": "# Install GitHub Version With [WEB INSTALLER](https://lab.flipper.net/?url=https%3A%2F%2Frogue-master.net%2F%3Ffile%3DRM1117-1555-26299030.tgz&channel=RM1117-1555-26299030&version=0.420.0&target=f7) ## Thank you so much "
     },
     "freewili-stable": {
       "device": "FREE-WILi 2",
@@ -155,18 +155,18 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-11-15",
-      "publishedAt": "2026-11-15T00:28:14Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-15",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-15/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261115.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261115.zip",
+      "version": "nightly-tag-2026-11-18",
+      "publishedAt": "2026-11-18T00:28:01Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-18",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-18/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip",
       "files": [
         {
-          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261115.zip",
-          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-15/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261115.zip"
+          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-18/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip"
         }
       ],
-      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261115.zip · **Nightly release - 2026-11-15** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
+      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip · **Nightly release - 2026-11-18** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
     },
     "halehound-stable": {
       "device": "HaleHound",
