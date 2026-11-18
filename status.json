@@ -214,18 +214,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.47.0",
-      "publishedAt": "2026-11-17T03:09:30Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.47.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.47.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.48.0",
+      "publishedAt": "2026-11-18T14:43:17Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.48.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.48.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.47.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.48.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **You Break it You Bought It.** One button now does three jobs, a moth with opinions moved into the treeline, and the Tab5 learned to fix its own radio so you don't have to. Squachy: \"I only touc"
+      "note": "nm-cyd-c5-firmware.bin · **Every Breath You Take.** HUMAN SENSING got three new pages, the Tab5 learned to sense the room with its own radio, and VITALS now counts your breaths from the WiFi between you and your router. "
     },
     "phantom-stable": {
       "device": "Phantom",
