@@ -182,18 +182,18 @@
     "marauder-v8-stable": {
       "device": "Marauder V8",
       "label": "Stable",
-      "version": "v1.20.0",
-      "publishedAt": "2026-10-28T18:22:11Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.20.0",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_v8.bin",
-      "fileName": "esp32_marauder_v1_20_0_20261028_v8.bin",
+      "version": "v1.21.0",
+      "publishedAt": "2026-11-20T18:13:52Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.21.0",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.21.0/esp32_marauder_v1_21_0_20261120_v8.bin",
+      "fileName": "esp32_marauder_v1_21_0_20261120_v8.bin",
       "files": [
         {
-          "name": "esp32_marauder_v1_20_0_20261028_v8.bin",
-          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_v8.bin"
+          "name": "esp32_marauder_v1_21_0_20261120_v8.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.21.0/esp32_marauder_v1_21_0_20261120_v8.bin"
         }
       ],
-      "note": "esp32_marauder_v1_20_0_20261028_v8.bin · ## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per-AP WiFi attack pr"
+      "note": "esp32_marauder_v1_21_0_20261120_v8.bin · ## What's Changed * Fix beacon spam compatibility and prepare v1.20.1 by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1695 * Start the Waveshare C5 3.5 "
     },
     "marauder-v8-nightly": {
       "device": "Marauder V8",
@@ -214,34 +214,34 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.48.0",
-      "publishedAt": "2026-11-18T14:43:17Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.48.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.48.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.49.0",
+      "publishedAt": "2026-11-20T17:17:16Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.49.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.49.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.48.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.49.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Every Breath You Take.** HUMAN SENSING got three new pages, the Tab5 learned to sense the room with its own radio, and VITALS now counts your breaths from the WiFi between you and your router. "
+      "note": "nm-cyd-c5-firmware.bin · **Ring Ding Dong.** Your watch can knock on a tracker's door now. Spot an AirTag, a Samsung tag, a Google tag or a Tile that's been tagging along, press RING, and make it give itself away. Squach"
     },
     "phantom-stable": {
       "device": "Phantom",
       "label": "Stable",
-      "version": "v1.20.0",
-      "publishedAt": "2026-10-28T18:22:11Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.20.0",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
+      "version": "v1.21.0",
+      "publishedAt": "2026-11-20T18:13:52Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.21.0",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.21.0/esp32_marauder_v1_21_0_20261120_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_21_0_20261120_cyd_2432S024_guition.bin",
       "files": [
         {
-          "name": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin",
-          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.20.0/esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin"
+          "name": "esp32_marauder_v1_21_0_20261120_cyd_2432S024_guition.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/v1.21.0/esp32_marauder_v1_21_0_20261120_cyd_2432S024_guition.bin"
         }
       ],
-      "note": "esp32_marauder_v1_20_0_20261028_cyd_2432S024_guition.bin · ## What's Changed * Add FCC module IDs and station AP selection by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1660 * Add [guided per"
+      "note": "esp32_marauder_v1_21_0_20261120_cyd_2432S024_guition.bin · ## What's Changed * Fix beacon spam compatibility and prepare v1.20.1 by @justcallmekoko in https://github.com/justcallmekoko/ESP32Marauder/pull/1695 * Start the"
     },
     "phantom-nightly": {
       "device": "Phantom",
