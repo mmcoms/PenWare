@@ -155,25 +155,25 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-11-18",
-      "publishedAt": "2026-11-18T00:28:01Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-18",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-18/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip",
+      "version": "nightly-tag-2026-11-21",
+      "publishedAt": "2026-11-21T00:25:05Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-21",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-21/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261121.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261121.zip",
       "files": [
         {
-          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip",
-          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-18/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip"
+          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261121.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-21/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261121.zip"
         }
       ],
-      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261118.zip · **Nightly release - 2026-11-18** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
+      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261121.zip · **Nightly release - 2026-11-21** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
     },
     "halehound-stable": {
       "device": "HaleHound",
       "label": "Stable",
-      "version": "v4.1.5",
-      "publishedAt": "2026-11-12T03:33:14Z",
-      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v4.1.5",
+      "version": "v4.1.6",
+      "publishedAt": "2026-11-21T06:22:59Z",
+      "url": "https://github.com/JesseCHale/HaleHound-CYD/releases/tag/v4.1.6",
       "fileUrl": null,
       "fileName": null,
       "files": [],
@@ -198,18 +198,18 @@
     "marauder-v8-nightly": {
       "device": "Marauder V8",
       "label": "Nightly",
-      "version": "nightly_a7a5186",
-      "publishedAt": "2026-11-20T03:14:03Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_a7a5186",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_a7a5186/esp32_marauder_v1_20_1_beta_20261120_v8.bin",
-      "fileName": "esp32_marauder_v1_20_1_beta_20261120_v8.bin",
+      "version": "nightly_d9197cf",
+      "publishedAt": "2026-11-21T03:13:41Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_d9197cf",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_d9197cf/esp32_marauder_v1_21_0_beta_20261121_v8.bin",
+      "fileName": "esp32_marauder_v1_21_0_beta_20261121_v8.bin",
       "files": [
         {
-          "name": "esp32_marauder_v1_20_1_beta_20261120_v8.bin",
-          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_a7a5186/esp32_marauder_v1_20_1_beta_20261120_v8.bin"
+          "name": "esp32_marauder_v1_21_0_beta_20261121_v8.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_d9197cf/esp32_marauder_v1_21_0_beta_20261121_v8.bin"
         }
       ],
-      "note": "esp32_marauder_v1_20_1_beta_20261120_v8.bin · [justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change befor"
+      "note": "esp32_marauder_v1_21_0_beta_20261121_v8.bin · [justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored data may change befor"
     },
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
@@ -246,18 +246,18 @@
     "phantom-nightly": {
       "device": "Phantom",
       "label": "Nightly",
-      "version": "nightly_a7a5186",
-      "publishedAt": "2026-11-20T03:14:03Z",
-      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_a7a5186",
-      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_a7a5186/esp32_marauder_v1_20_1_beta_20261120_cyd_2432S024_guition.bin",
-      "fileName": "esp32_marauder_v1_20_1_beta_20261120_cyd_2432S024_guition.bin",
+      "version": "nightly_d9197cf",
+      "publishedAt": "2026-11-21T03:13:41Z",
+      "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/nightly_d9197cf",
+      "fileUrl": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_d9197cf/esp32_marauder_v1_21_0_beta_20261121_cyd_2432S024_guition.bin",
+      "fileName": "esp32_marauder_v1_21_0_beta_20261121_cyd_2432S024_guition.bin",
       "files": [
         {
-          "name": "esp32_marauder_v1_20_1_beta_20261120_cyd_2432S024_guition.bin",
-          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_a7a5186/esp32_marauder_v1_20_1_beta_20261120_cyd_2432S024_guition.bin"
+          "name": "esp32_marauder_v1_21_0_beta_20261121_cyd_2432S024_guition.bin",
+          "url": "https://github.com/justcallmekoko/ESP32Marauder/releases/download/nightly_d9197cf/esp32_marauder_v1_21_0_beta_20261121_cyd_2432S024_guition.bin"
         }
       ],
-      "note": "esp32_marauder_v1_20_1_beta_20261120_cyd_2432S024_guition.bin · [justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored dat"
+      "note": "esp32_marauder_v1_21_0_beta_20261121_cyd_2432S024_guition.bin · [justcallmekokollc.com](https://justcallmekokollc.com) > **Nightly build:** This automated prerelease is for testing and evaluation. Features and stored dat"
     },
     "tembed-bruce": {
       "device": "T-Embed",
