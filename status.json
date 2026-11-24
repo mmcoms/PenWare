@@ -273,13 +273,13 @@
     "pager-stable": {
       "device": "WiFi Pineapple Pager",
       "label": "Stable",
-      "version": "2.0.0-stable",
-      "publishedAt": "2026-10-29T01:26:22.858018Z",
+      "version": "2.1.0-stable",
+      "publishedAt": "2026-11-24T18:39:52.461199Z",
       "url": "https://downloads.hak5.org/pineapple/pager",
       "fileUrl": null,
       "fileName": null,
       "files": [],
-      "note": "SHA-256 17dab9757b6b9cf154b0a5f669498cabd0577a99a21df5029c62c386d03d7968 · WiFi Pineapple Pager 2.0.0 Highlights Boots twice as fast: ready in ~93s, down from up to ~215s. Faster and lighter: menus draw 20-35% faster, and background CPU use is reduced by two-thirds. Bluetooth recon: blue5, a ne"
+      "note": "SHA-256 0c5ade158297bdeeb458801254876e304f33acc7950e6141eeae1b109218b93a · WiFi Pineapple Pager 2.1.0 Highlights Faster all round: an even quicker boot, a faster display and network changes that apply as soon as they are made. Captures panel: handshakes in one place on the Virtual Pager's Recon"
     }
   }
 }
