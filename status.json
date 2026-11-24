@@ -155,18 +155,18 @@
     "mayhem-nightly": {
       "device": "HackRF Pro H4M",
       "label": "Nightly",
-      "version": "nightly-tag-2026-11-22",
-      "publishedAt": "2026-11-22T00:26:19Z",
-      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-22",
-      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-22/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261122.zip",
-      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261122.zip",
+      "version": "nightly-tag-2026-11-24",
+      "publishedAt": "2026-11-24T00:25:29Z",
+      "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/tag/nightly-tag-2026-11-24",
+      "fileUrl": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-24/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261124.zip",
+      "fileName": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261124.zip",
       "files": [
         {
-          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261122.zip",
-          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-22/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261122.zip"
+          "name": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261124.zip",
+          "url": "https://github.com/portapack-mayhem/mayhem-firmware/releases/download/nightly-tag-2026-11-24/COPY_TO_SDCARD_hpro_mayhem_nightly_n_261124.zip"
         }
       ],
-      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261122.zip · **Nightly release - 2026-11-22** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
+      "note": "COPY_TO_SDCARD_hpro_mayhem_nightly_n_261124.zip · **Nightly release - 2026-11-24** This build is the latest and greatest, although may not be the most stable as this is a nightly release. ## Release notes ### Revision (n"
     },
     "halehound-stable": {
       "device": "HaleHound",
