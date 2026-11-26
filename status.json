@@ -214,18 +214,18 @@
     "nm-cyd-c5-squachwatch": {
       "device": "NM-CYD-C5 (SquachWatch)",
       "label": "SquachWatch stable",
-      "version": "v1.50.0",
-      "publishedAt": "2026-11-22T16:20:20Z",
-      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.50.0",
-      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.50.0/nm-cyd-c5-firmware.bin",
+      "version": "v1.51.0",
+      "publishedAt": "2026-11-26T20:17:15Z",
+      "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/tag/v1.51.0",
+      "fileUrl": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.51.0/nm-cyd-c5-firmware.bin",
       "fileName": "nm-cyd-c5-firmware.bin",
       "files": [
         {
           "name": "nm-cyd-c5-firmware.bin",
-          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.50.0/nm-cyd-c5-firmware.bin"
+          "url": "https://github.com/skizzophrenic/SquachWatch-CYD/releases/download/v1.51.0/nm-cyd-c5-firmware.bin"
         }
       ],
-      "note": "nm-cyd-c5-firmware.bin · **Roll With It.** Squachy rolls dice now. Every so often a gold d20 drops at his feet, and whatever it rolls turns up on the screen: a stranger Squachy dropping out of a hole in the sky, a goblin"
+      "note": "nm-cyd-c5-firmware.bin · **Let It Snow.** From December 1 to 26, the main screen snows. Flakes drift behind Squachy and in front of him, a drift piles up along the floor, three strings of lights hang across the top, and "
     },
     "phantom-stable": {
       "device": "Phantom",
